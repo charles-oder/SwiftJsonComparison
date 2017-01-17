@@ -24,6 +24,7 @@
 		E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318681E2EA7FE00096942 /* OMLargeSimpleArray.swift */; };
 		E1D3186B1E2EAEA900096942 /* MediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3186A1E2EAEA900096942 /* MediumFile.swift */; };
 		E1D3186D1E2EB00800096942 /* OMMediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3186C1E2EB00800096942 /* OMMediumFile.swift */; };
+		E1D318711E2EB4BC00096942 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318701E2EB4BC00096942 /* BaseTests.swift */; };
 		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		E1D318681E2EA7FE00096942 /* OMLargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMLargeSimpleArray.swift; sourceTree = "<group>"; };
 		E1D3186A1E2EAEA900096942 /* MediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumFile.swift; sourceTree = "<group>"; };
 		E1D3186C1E2EB00800096942 /* OMMediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMMediumFile.swift; sourceTree = "<group>"; };
+		E1D318701E2EB4BC00096942 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				E1D318611E2E91C400096942 /* TestModels */,
 				E1D3185E1E2E8D1900096942 /* ObjectMapperModels */,
+				E1D318701E2EB4BC00096942 /* BaseTests.swift */,
 				E1D318641E2E943800096942 /* ObjectMapperTests.swift */,
 				E1D3185C1E2E8C7100096942 /* JsonLoader.swift */,
 				E1D318551E2E8AF800096942 /* TestData */,
@@ -406,6 +409,7 @@
 				E1D3186B1E2EAEA900096942 /* MediumFile.swift in Sources */,
 				E1D3185D1E2E8C7100096942 /* JsonLoader.swift in Sources */,
 				E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */,
+				E1D318711E2EB4BC00096942 /* BaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
