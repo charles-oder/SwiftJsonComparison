@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33846309B0D091C77EE57983 /* Pods_JsonSerializerComparison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EE5F4ED2CF36985C15840D /* Pods_JsonSerializerComparison.framework */; };
 		E1D318361E2E897A00096942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318351E2E897A00096942 /* AppDelegate.swift */; };
 		E1D318381E2E897A00096942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318371E2E897A00096942 /* ViewController.swift */; };
 		E1D3183B1E2E897A00096942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D318391E2E897A00096942 /* Main.storyboard */; };
 		E1D3183D1E2E897A00096942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D3183C1E2E897A00096942 /* Assets.xcassets */; };
 		E1D318401E2E897A00096942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D3183E1E2E897A00096942 /* LaunchScreen.storyboard */; };
+		E1D3184E1E2E8A2800096942 /* JsonSerializerComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */; };
+		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E1D318501E2E8A2800096942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D3182A1E2E897A00096942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D318311E2E897A00096942;
+			remoteInfo = JsonSerializerComparison;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1B78AE0F582446ACE9D8605E /* Pods-JsonSerializerComparisonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparisonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparisonTests/Pods-JsonSerializerComparisonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48D07421A5588319C874D755 /* Pods-JsonSerializerComparison.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparison.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparison/Pods-JsonSerializerComparison.debug.xcconfig"; sourceTree = "<group>"; };
+		92EE5F4ED2CF36985C15840D /* Pods_JsonSerializerComparison.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonSerializerComparison.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonSerializerComparisonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93A478C9BC125BE90D3F0CD /* Pods-JsonSerializerComparisonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparisonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparisonTests/Pods-JsonSerializerComparisonTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparison.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparison/Pods-JsonSerializerComparison.release.xcconfig"; sourceTree = "<group>"; };
 		E1D318321E2E897A00096942 /* JsonSerializerComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonSerializerComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D318351E2E897A00096942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D318371E2E897A00096942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,9 @@
 		E1D3183C1E2E897A00096942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1D3183F1E2E897A00096942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1D318411E2E897A00096942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D3184B1E2E8A2700096942 /* JsonSerializerComparisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonSerializerComparisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerComparisonTests.swift; sourceTree = "<group>"; };
+		E1D3184F1E2E8A2800096942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33846309B0D091C77EE57983 /* Pods_JsonSerializerComparison.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D318481E2E8A2700096942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79665DAA5F01BE1A8ECE7CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92EE5F4ED2CF36985C15840D /* Pods_JsonSerializerComparison.framework */,
+				950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86D68C8D7D4FC03F849B18E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48D07421A5588319C874D755 /* Pods-JsonSerializerComparison.debug.xcconfig */,
+				BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */,
+				1B78AE0F582446ACE9D8605E /* Pods-JsonSerializerComparisonTests.debug.xcconfig */,
+				A93A478C9BC125BE90D3F0CD /* Pods-JsonSerializerComparisonTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E1D318291E2E897A00096942 = {
 			isa = PBXGroup;
 			children = (
 				E1D318341E2E897A00096942 /* JsonSerializerComparison */,
+				E1D3184C1E2E8A2800096942 /* JsonSerializerComparisonTests */,
 				E1D318331E2E897A00096942 /* Products */,
+				86D68C8D7D4FC03F849B18E1 /* Pods */,
+				79665DAA5F01BE1A8ECE7CE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D318321E2E897A00096942 /* JsonSerializerComparison.app */,
+				E1D3184B1E2E8A2700096942 /* JsonSerializerComparisonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +119,15 @@
 			path = JsonSerializerComparison;
 			sourceTree = "<group>";
 		};
+		E1D3184C1E2E8A2800096942 /* JsonSerializerComparisonTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */,
+				E1D3184F1E2E8A2800096942 /* Info.plist */,
+			);
+			path = JsonSerializerComparisonTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1D318441E2E897A00096942 /* Build configuration list for PBXNativeTarget "JsonSerializerComparison" */;
 			buildPhases = (
+				98B157D464DED33ED17BD652 /* [CP] Check Pods Manifest.lock */,
 				E1D3182E1E2E897A00096942 /* Sources */,
 				E1D3182F1E2E897A00096942 /* Frameworks */,
 				E1D318301E2E897A00096942 /* Resources */,
+				CEDC680CBD76EC17D240B3B2 /* [CP] Embed Pods Frameworks */,
+				84BC0B3C47EFDCDC70AEC4E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -83,6 +150,27 @@
 			productName = JsonSerializerComparison;
 			productReference = E1D318321E2E897A00096942 /* JsonSerializerComparison.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E1D3184A1E2E8A2700096942 /* JsonSerializerComparisonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D318521E2E8A2800096942 /* Build configuration list for PBXNativeTarget "JsonSerializerComparisonTests" */;
+			buildPhases = (
+				B1949CB0A23BE9251721CA0D /* [CP] Check Pods Manifest.lock */,
+				E1D318471E2E8A2700096942 /* Sources */,
+				E1D318481E2E8A2700096942 /* Frameworks */,
+				E1D318491E2E8A2700096942 /* Resources */,
+				3B4BD871543114638FB691D8 /* [CP] Embed Pods Frameworks */,
+				0A3E71909528CD0F0D4C5D59 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D318511E2E8A2800096942 /* PBXTargetDependency */,
+			);
+			name = JsonSerializerComparisonTests;
+			productName = JsonSerializerComparisonTests;
+			productReference = E1D3184B1E2E8A2700096942 /* JsonSerializerComparisonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +186,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LBQJS63JZK;
 						ProvisioningStyle = Automatic;
+					};
+					E1D3184A1E2E8A2700096942 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LBQJS63JZK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1D318311E2E897A00096942;
 					};
 				};
 			};
@@ -115,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				E1D318311E2E897A00096942 /* JsonSerializerComparison */,
+				E1D3184A1E2E8A2700096942 /* JsonSerializerComparisonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +225,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1D318491E2E8A2700096942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3E71909528CD0F0D4C5D59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonSerializerComparisonTests/Pods-JsonSerializerComparisonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4BD871543114638FB691D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonSerializerComparisonTests/Pods-JsonSerializerComparisonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84BC0B3C47EFDCDC70AEC4E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonSerializerComparison/Pods-JsonSerializerComparison-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B157D464DED33ED17BD652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1949CB0A23BE9251721CA0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDC680CBD76EC17D240B3B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonSerializerComparison/Pods-JsonSerializerComparison-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1D3182E1E2E897A00096942 /* Sources */ = {
@@ -142,7 +337,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1D318471E2E8A2700096942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D3184E1E2E8A2800096942 /* JsonSerializerComparisonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1D318511E2E8A2800096942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D318311E2E897A00096942 /* JsonSerializerComparison */;
+			targetProxy = E1D318501E2E8A2800096942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E1D318391E2E897A00096942 /* Main.storyboard */ = {
@@ -259,6 +470,7 @@
 		};
 		E1D318451E2E897A00096942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D07421A5588319C874D755 /* Pods-JsonSerializerComparison.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LBQJS63JZK;
@@ -272,6 +484,7 @@
 		};
 		E1D318461E2E897A00096942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LBQJS63JZK;
@@ -280,6 +493,36 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dtn.JsonSerializerComparison;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E1D318531E2E8A2800096942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B78AE0F582446ACE9D8605E /* Pods-JsonSerializerComparisonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LBQJS63JZK;
+				INFOPLIST_FILE = JsonSerializerComparisonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtn.JsonSerializerComparisonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JsonSerializerComparison.app/JsonSerializerComparison";
+			};
+			name = Debug;
+		};
+		E1D318541E2E8A2800096942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93A478C9BC125BE90D3F0CD /* Pods-JsonSerializerComparisonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LBQJS63JZK;
+				INFOPLIST_FILE = JsonSerializerComparisonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtn.JsonSerializerComparisonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JsonSerializerComparison.app/JsonSerializerComparison";
 			};
 			name = Release;
 		};
@@ -300,6 +543,14 @@
 			buildConfigurations = (
 				E1D318451E2E897A00096942 /* Debug */,
 				E1D318461E2E897A00096942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1D318521E2E8A2800096942 /* Build configuration list for PBXNativeTarget "JsonSerializerComparisonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D318531E2E8A2800096942 /* Debug */,
+				E1D318541E2E8A2800096942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
