@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "command": "QuoteWatch",
+        "symbols": [{"symbol": "@C@1","market": "CBT"}],
+        "expression": "@c@1",
+        "status": 200,
+        "requestId": 2
+    },
+    "data": [
+             {
+             "Last": "108.9863",
+             "Change": "0.4763",
+             "High": "110.0000",
+             "Low": "100.0000",
+             "Open": "770.1000",
+             "Bid": "762.5100",
+             "Ask": "762.8300",
+             "CumVolume": 1270264,
+             "IssueDescription": "ALPHABET INC CLASS C",
+             "Settledate": "2016-10-03",
+             "SettlementPrice": "1.2875",
+             "ActualSymbol": "@CZ16",
+             "QuoteDelay": 10,
+             "TradeDateTime": "2016-09-09T18:54:35.917",
+             "PctChange": "0.32"
+             }
+             ]
+}

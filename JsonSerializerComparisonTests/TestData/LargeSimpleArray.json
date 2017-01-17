@@ -1,0 +1,2314 @@
+{
+    "meta": {
+        "command": "ChartWatch",
+        "requestId": 4,
+        "status": 200,
+        "upToDate": true,
+        "symbols": [
+                    "DTN:NAS:AAPL"
+                    ],
+        "expression": "AAPL",
+        "expressionDesc": ""
+    },
+    "data": [{
+             "DateTime": "2016-09-01T15:02:14.978",
+             "Open": {
+             "number": 105.78500000000001,
+             "text": "105.7850"
+             },
+             "High": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Low": {
+             "number": 105.78500000000001,
+             "text": "105.7850"
+             },
+             "Close": {
+             "number": 105.805,
+             "text": "105.8050"
+             },
+             "Volume": {
+             "number": 4511.0,
+             "text": "4511"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:02:24.428",
+             "Open": {
+             "number": 105.808,
+             "text": "105.8080"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.808,
+             "text": "105.8080"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 20141.0,
+             "text": "20141"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:02:29.913",
+             "Open": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Close": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Volume": {
+             "number": 3902.0,
+             "text": "3902"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:02:34.377",
+             "Open": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "High": {
+             "number": 105.819,
+             "text": "105.8190"
+             },
+             "Low": {
+             "number": 105.80000000000001,
+             "text": "105.8000"
+             },
+             "Close": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Volume": {
+             "number": 3240.0,
+             "text": "3240"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:02:43.189",
+             "Open": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "High": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Low": {
+             "number": 105.79,
+             "text": "105.7900"
+             },
+             "Close": {
+             "number": 105.795,
+             "text": "105.7950"
+             },
+             "Volume": {
+             "number": 8315.0,
+             "text": "8315"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:03:10.520",
+             "Open": {
+             "number": 105.80000000000001,
+             "text": "105.8000"
+             },
+             "High": {
+             "number": 105.80000000000001,
+             "text": "105.8000"
+             },
+             "Low": {
+             "number": 105.79,
+             "text": "105.7900"
+             },
+             "Close": {
+             "number": 105.80000000000001,
+             "text": "105.8000"
+             },
+             "Volume": {
+             "number": 3794.0,
+             "text": "3794"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:03:29.509",
+             "Open": {
+             "number": 105.80000000000001,
+             "text": "105.8000"
+             },
+             "High": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Low": {
+             "number": 105.7941,
+             "text": "105.7941"
+             },
+             "Close": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Volume": {
+             "number": 4158.0,
+             "text": "4158"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:03:49.382",
+             "Open": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 5752.0,
+             "text": "5752"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:05.747",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Low": {
+             "number": 105.8314,
+             "text": "105.8314"
+             },
+             "Close": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Volume": {
+             "number": 8740.0,
+             "text": "8740"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:10.336",
+             "Open": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 7456.0,
+             "text": "7456"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:17.968",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 4662.0,
+             "text": "4662"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:31.412",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 5322.0,
+             "text": "5322"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:45.969",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3939.0,
+             "text": "3939"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:45.975",
+             "Open": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3600.0,
+             "text": "3600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:45.981",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3600.0,
+             "text": "3600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:04:48.553",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 9018.0,
+             "text": "9018"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:03.640",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 3100.0,
+             "text": "3100"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:03.646",
+             "Open": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Close": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Volume": {
+             "number": 3100.0,
+             "text": "3100"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:03.652",
+             "Open": {
+             "number": 105.81500000000001,
+             "text": "105.8150"
+             },
+             "High": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Low": {
+             "number": 105.81,
+             "text": "105.8100"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 5140.0,
+             "text": "5140"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:10.696",
+             "Open": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "High": {
+             "number": 105.8465,
+             "text": "105.8465"
+             },
+             "Low": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Close": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Volume": {
+             "number": 6900.0,
+             "text": "6900"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:23.141",
+             "Open": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "High": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Low": {
+             "number": 105.8199,
+             "text": "105.8199"
+             },
+             "Close": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Volume": {
+             "number": 12274.0,
+             "text": "12274"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:30.754",
+             "Open": {
+             "number": 105.82650000000001,
+             "text": "105.8265"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 4500.0,
+             "text": "4500"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:39.969",
+             "Open": {
+             "number": 105.82900000000001,
+             "text": "105.8290"
+             },
+             "High": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Low": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Close": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Volume": {
+             "number": 3369.0,
+             "text": "3369"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:49.533",
+             "Open": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "High": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Low": {
+             "number": 105.82000000000001,
+             "text": "105.8200"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 7099.0,
+             "text": "7099"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:05:59.564",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.84100000000001,
+             "text": "105.8410"
+             },
+             "Volume": {
+             "number": 8980.0,
+             "text": "8980"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:21.269",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 13536.0,
+             "text": "13536"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:31.411",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Volume": {
+             "number": 3465.0,
+             "text": "3465"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:36.954",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.86500000000001,
+             "text": "105.8650"
+             },
+             "Close": {
+             "number": 105.8815,
+             "text": "105.8815"
+             },
+             "Volume": {
+             "number": 4724.0,
+             "text": "4724"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:43.472",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Close": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Volume": {
+             "number": 5696.0,
+             "text": "5696"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:54.096",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 4150.0,
+             "text": "4150"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:54.626",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Close": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Volume": {
+             "number": 3100.0,
+             "text": "3100"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:06:54.636",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.86500000000001,
+             "text": "105.8650"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 4547.0,
+             "text": "4547"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:03.085",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.845,
+             "text": "105.8450"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 4082.0,
+             "text": "4082"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:11.987",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.845,
+             "text": "105.8450"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3400.0,
+             "text": "3400"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:12.029",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 3700.0,
+             "text": "3700"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:20.037",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Low": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Close": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Volume": {
+             "number": 3400.0,
+             "text": "3400"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:20.434",
+             "Open": {
+             "number": 105.885,
+             "text": "105.8850"
+             },
+             "High": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 3568.0,
+             "text": "3568"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:37.130",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.87950000000001,
+             "text": "105.8795"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 3481.0,
+             "text": "3481"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:40.787",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3200.0,
+             "text": "3200"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:41.691",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 3897.0,
+             "text": "3897"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:07:44.978",
+             "Open": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "High": {
+             "number": 105.88250000000001,
+             "text": "105.8825"
+             },
+             "Low": {
+             "number": 105.861,
+             "text": "105.8610"
+             },
+             "Close": {
+             "number": 105.861,
+             "text": "105.8610"
+             },
+             "Volume": {
+             "number": 4675.0,
+             "text": "4675"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:04.926",
+             "Open": {
+             "number": 105.8601,
+             "text": "105.8601"
+             },
+             "High": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 7000.0,
+             "text": "7000"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:19.455",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.8669,
+             "text": "105.8669"
+             },
+             "Volume": {
+             "number": 4000.0,
+             "text": "4000"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:26.495",
+             "Open": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "High": {
+             "number": 105.87100000000001,
+             "text": "105.8710"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 5536.0,
+             "text": "5536"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:39.873",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Close": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Volume": {
+             "number": 3900.0,
+             "text": "3900"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:51.785",
+             "Open": {
+             "number": 105.855,
+             "text": "105.8550"
+             },
+             "High": {
+             "number": 105.855,
+             "text": "105.8550"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 4912.0,
+             "text": "4912"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:08:58.736",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.8482,
+             "text": "105.8482"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Volume": {
+             "number": 10300.0,
+             "text": "10300"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:09.645",
+             "Open": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "High": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Low": {
+             "number": 105.83,
+             "text": "105.8300"
+             },
+             "Close": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Volume": {
+             "number": 3746.0,
+             "text": "3746"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:31.644",
+             "Open": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "High": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Low": {
+             "number": 105.84,
+             "text": "105.8400"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3300.0,
+             "text": "3300"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:31.731",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.85000000000001,
+             "text": "105.8500"
+             },
+             "Close": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Volume": {
+             "number": 3400.0,
+             "text": "3400"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:48.192",
+             "Open": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "High": {
+             "number": 105.87,
+             "text": "105.8700"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.86500000000001,
+             "text": "105.8650"
+             },
+             "Volume": {
+             "number": 3000.0,
+             "text": "3000"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:49.270",
+             "Open": {
+             "number": 105.86410000000001,
+             "text": "105.8641"
+             },
+             "High": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Low": {
+             "number": 105.86410000000001,
+             "text": "105.8641"
+             },
+             "Close": {
+             "number": 105.875,
+             "text": "105.8750"
+             },
+             "Volume": {
+             "number": 8400.0,
+             "text": "8400"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:50.117",
+             "Open": {
+             "number": 105.875,
+             "text": "105.8750"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.86,
+             "text": "105.8600"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 8000.0,
+             "text": "8000"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:53.276",
+             "Open": {
+             "number": 105.885,
+             "text": "105.8850"
+             },
+             "High": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Low": {
+             "number": 105.885,
+             "text": "105.8850"
+             },
+             "Close": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Volume": {
+             "number": 4867.0,
+             "text": "4867"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:09:57.589",
+             "Open": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "High": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Low": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 6993.0,
+             "text": "6993"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:03.548",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.8985,
+             "text": "105.8985"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 4553.0,
+             "text": "4553"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:21.241",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.9171,
+             "text": "105.9171"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.9171,
+             "text": "105.9171"
+             },
+             "Volume": {
+             "number": 4835.0,
+             "text": "4835"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:41.294",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.92110000000001,
+             "text": "105.9211"
+             },
+             "Low": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Close": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Volume": {
+             "number": 3600.0,
+             "text": "3600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:47.906",
+             "Open": {
+             "number": 105.905,
+             "text": "105.9050"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.905,
+             "text": "105.9050"
+             },
+             "Close": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Volume": {
+             "number": 6200.0,
+             "text": "6200"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:50.953",
+             "Open": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 3600.0,
+             "text": "3600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:50.959",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 3600.0,
+             "text": "3600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:50.965",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.9199,
+             "text": "105.9199"
+             },
+             "Close": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Volume": {
+             "number": 5279.0,
+             "text": "5279"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:51.742",
+             "Open": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "High": {
+             "number": 105.935,
+             "text": "105.9350"
+             },
+             "Low": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 3400.0,
+             "text": "3400"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:10:56.925",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Low": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Close": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Volume": {
+             "number": 3530.0,
+             "text": "3530"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:11:00.081",
+             "Open": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "High": {
+             "number": 105.915,
+             "text": "105.9150"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 5553.0,
+             "text": "5553"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:11:39.974",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 9157.0,
+             "text": "9157"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:12:14.226",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.915,
+             "text": "105.9150"
+             },
+             "Low": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Close": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Volume": {
+             "number": 4672.0,
+             "text": "4672"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:13:42.864",
+             "Open": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "High": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Low": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Close": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Volume": {
+             "number": 5269.0,
+             "text": "5269"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:14:10.868",
+             "Open": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "High": {
+             "number": 105.9599,
+             "text": "105.9599"
+             },
+             "Low": {
+             "number": 105.94500000000001,
+             "text": "105.9450"
+             },
+             "Close": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "Volume": {
+             "number": 4968.0,
+             "text": "4968"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:14:33.964",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 6867.0,
+             "text": "6867"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:14:33.979",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.965,
+             "text": "105.9650"
+             },
+             "Low": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 5171.0,
+             "text": "5171"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:14:34.026",
+             "Open": {
+             "number": 105.965,
+             "text": "105.9650"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Close": {
+             "number": 105.964,
+             "text": "105.9640"
+             },
+             "Volume": {
+             "number": 5952.0,
+             "text": "5952"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:14:58.500",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Low": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "Close": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "Volume": {
+             "number": 3500.0,
+             "text": "3500"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:15:11.655",
+             "Open": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "High": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Low": {
+             "number": 105.955,
+             "text": "105.9550"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 4378.0,
+             "text": "4378"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:15:18.734",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Close": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Volume": {
+             "number": 7508.0,
+             "text": "7508"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:16:11.531",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.9565,
+             "text": "105.9565"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 4939.0,
+             "text": "4939"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:16:14.121",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 3730.0,
+             "text": "3730"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:16:23.319",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Low": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Close": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Volume": {
+             "number": 3200.0,
+             "text": "3200"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:16:26.532",
+             "Open": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "High": {
+             "number": 105.93440000000001,
+             "text": "105.9344"
+             },
+             "Low": {
+             "number": 105.915,
+             "text": "105.9150"
+             },
+             "Close": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Volume": {
+             "number": 4750.0,
+             "text": "4750"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:17:01.339",
+             "Open": {
+             "number": 105.915,
+             "text": "105.9150"
+             },
+             "High": {
+             "number": 105.915,
+             "text": "105.9150"
+             },
+             "Low": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Close": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Volume": {
+             "number": 5337.0,
+             "text": "5337"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:17:10.530",
+             "Open": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "High": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Low": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 4057.0,
+             "text": "4057"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:17:12.668",
+             "Open": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "High": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Low": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Close": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Volume": {
+             "number": 3892.0,
+             "text": "3892"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:18:12.529",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 3940.0,
+             "text": "3940"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:18:18.530",
+             "Open": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.90140000000001,
+             "text": "105.9014"
+             },
+             "Close": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Volume": {
+             "number": 4080.0,
+             "text": "4080"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:18:34.657",
+             "Open": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "High": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Low": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 3511.0,
+             "text": "3511"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:18:43.440",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Volume": {
+             "number": 7680.0,
+             "text": "7680"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:19:01.544",
+             "Open": {
+             "number": 105.88350000000001,
+             "text": "105.8835"
+             },
+             "High": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Volume": {
+             "number": 3202.0,
+             "text": "3202"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:19:11.529",
+             "Open": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "High": {
+             "number": 105.89,
+             "text": "105.8900"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Volume": {
+             "number": 5234.0,
+             "text": "5234"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:19:13.534",
+             "Open": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "High": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Low": {
+             "number": 105.88000000000001,
+             "text": "105.8800"
+             },
+             "Close": {
+             "number": 105.9,
+             "text": "105.9000"
+             },
+             "Volume": {
+             "number": 3200.0,
+             "text": "3200"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:19:23.649",
+             "Open": {
+             "number": 105.91000000000001,
+             "text": "105.9100"
+             },
+             "High": {
+             "number": 105.93,
+             "text": "105.9300"
+             },
+             "Low": {
+             "number": 105.905,
+             "text": "105.9050"
+             },
+             "Close": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Volume": {
+             "number": 5569.0,
+             "text": "5569"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:19:50.684",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "Close": {
+             "number": 105.965,
+             "text": "105.9650"
+             },
+             "Volume": {
+             "number": 4454.0,
+             "text": "4454"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:20:33.083",
+             "Open": {
+             "number": 105.95,
+             "text": "105.9500"
+             },
+             "High": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Low": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Close": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Volume": {
+             "number": 3975.0,
+             "text": "3975"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:20:52.476",
+             "Open": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "High": {
+             "number": 105.9744,
+             "text": "105.9744"
+             },
+             "Low": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 4600.0,
+             "text": "4600"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:21:20.103",
+             "Open": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "High": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Low": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Close": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Volume": {
+             "number": 7700.0,
+             "text": "7700"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:21:26.046",
+             "Open": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "High": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Low": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Close": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Volume": {
+             "number": 3108.0,
+             "text": "3108"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:21:35.033",
+             "Open": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "High": {
+             "number": 106.0,
+             "text": "106.0000"
+             },
+             "Low": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Close": {
+             "number": 106.0,
+             "text": "106.0000"
+             },
+             "Volume": {
+             "number": 14614.0,
+             "text": "14614"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:21:41.019",
+             "Open": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "High": {
+             "number": 105.98,
+             "text": "105.9800"
+             },
+             "Low": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Close": {
+             "number": 105.97,
+             "text": "105.9700"
+             },
+             "Volume": {
+             "number": 3500.0,
+             "text": "3500"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:22:02.786",
+             "Open": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "High": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Low": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Close": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Volume": {
+             "number": 3100.0,
+             "text": "3100"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:22:02.794",
+             "Open": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "High": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Low": {
+             "number": 105.92,
+             "text": "105.9200"
+             },
+             "Close": {
+             "number": 105.92500000000001,
+             "text": "105.9250"
+             },
+             "Volume": {
+             "number": 4300.0,
+             "text": "4300"
+             },
+             "OpenInt": null
+             }, {
+             "DateTime": "2016-09-01T15:22:22.611",
+             "Open": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "High": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Low": {
+             "number": 105.94000000000001,
+             "text": "105.9400"
+             },
+             "Close": {
+             "number": 105.96000000000001,
+             "text": "105.9600"
+             },
+             "Volume": {
+             "number": 1900.0,
+             "text": "1900"
+             },
+             "OpenInt": null
+             }]
+}
