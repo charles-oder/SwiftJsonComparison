@@ -11,6 +11,7 @@ import ObjectMapper
 
 class ObjectMapperTests: XCTestCase {
     
+    let iterations = 1000
     
     func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
         return Mapper<OMLargeComplexFile>().map(JSONString: jsonString)
@@ -27,7 +28,7 @@ class ObjectMapperTests: XCTestCase {
         var jsonOutput: String?
         
         self.measure {
-            for _ in 1...1000 {
+            for _ in 1...self.iterations {
                 jsonOutput = self.serializeLargeComplexObject(testObject!)
             }
         }
@@ -41,7 +42,7 @@ class ObjectMapperTests: XCTestCase {
         
         var testObject: LargeComplexFile!
         self.measure {
-            for _ in 1...1000 {
+            for _ in 1...self.iterations {
                 testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
             }
         }
@@ -131,7 +132,7 @@ class ObjectMapperTests: XCTestCase {
         var jsonOutput: String?
         
         self.measure {
-            for _ in 1...1000 {
+            for _ in 1...self.iterations {
                 jsonOutput = self.serializeLargeSimpleArray(testObject!)
             }
         }
@@ -145,7 +146,7 @@ class ObjectMapperTests: XCTestCase {
         
         var testObject: LargeSimpleArray!
         self.measure {
-            for _ in 1...1000 {
+            for _ in 1...self.iterations {
                 testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
             }
         }
@@ -165,5 +166,66 @@ class ObjectMapperTests: XCTestCase {
         
         
     }
+    
+    func deserializeMediumFile(jsonString: String) -> MediumFile? {
+        return Mapper<OMMediumFile>().map(JSONString: jsonString)
+    }
+    
+    func serializeMediumFile(_ object: MediumFile) -> String? {
+        return (object as? OMMediumFile)?.toJSONString()
+    }
+    
+    func testSerializeMediumFile1000Times() {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
+        
+        let testObject = self.deserializeMediumFile(jsonString: jsonString)
+        var jsonOutput: String?
+        
+        self.measure {
+            for _ in 1...self.iterations {
+                jsonOutput = self.serializeMediumFile(testObject!)
+            }
+        }
+        
+        XCTAssertEqual(true, jsonOutput?.contains("ALPHABET INC CLASS C"))
+        
+    }
+    
+    func testDeserializeMediumFile1000Times() {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
+        
+        var testObject: MediumFile!
+        self.measure {
+            for _ in 1...self.iterations {
+                testObject = self.deserializeMediumFile(jsonString: jsonString)
+            }
+        }
+        
+        XCTAssertEqual("QuoteWatch", testObject.metaData?.command)
+        XCTAssertEqual("@C@1", testObject.metaData?.symbols.first?.symbol)
+        XCTAssertEqual("CBT", testObject.metaData?.symbols.first?.market)
+        XCTAssertEqual("@c@1", testObject.metaData?.expression)
+        XCTAssertEqual(200, testObject.metaData?.status)
+        XCTAssertEqual(2, testObject.metaData?.requestId)
+        XCTAssertEqual("108.9863", testObject.data.first?.Last)
+        XCTAssertEqual("0.4763", testObject.data.first?.Change)
+        XCTAssertEqual("110.0000", testObject.data.first?.High)
+        XCTAssertEqual("100.0000", testObject.data.first?.Low)
+        XCTAssertEqual("770.1000", testObject.data.first?.Open)
+        XCTAssertEqual("762.5100", testObject.data.first?.Bid)
+        XCTAssertEqual("762.8300", testObject.data.first?.Ask)
+        XCTAssertEqual(1270264, testObject.data.first?.CumVolume)
+        XCTAssertEqual("ALPHABET INC CLASS C", testObject.data.first?.IssueDescription)
+        XCTAssertEqual("2016-10-03", testObject.data.first?.Settledate)
+        XCTAssertEqual("1.2875", testObject.data.first?.SettlementPrice)
+        XCTAssertEqual("@CZ16", testObject.data.first?.ActualSymbol)
+        XCTAssertEqual(10, testObject.data.first?.QuoteDelay)
+        XCTAssertEqual("2016-09-09T18:54:35.917", testObject.data.first?.TradeDateTime)
+        XCTAssertEqual("0.32", testObject.data.first?.PctChange)
+        
+        
+    }
+    
+
     
 }
