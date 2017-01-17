@@ -1,15 +1,4 @@
 {
-    "meta": {
-        "command": "ChartWatch",
-        "requestId": 4,
-        "status": 200,
-        "upToDate": true,
-        "symbols": [
-                    "DTN:NAS:AAPL"
-                    ],
-        "expression": "AAPL",
-        "expressionDesc": ""
-    },
     "data": [{
              "DateTime": "2016-09-01T15:02:14.978",
              "Open": {

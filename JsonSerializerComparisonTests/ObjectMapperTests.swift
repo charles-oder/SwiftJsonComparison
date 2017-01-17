@@ -116,4 +116,54 @@ class ObjectMapperTests: XCTestCase {
         
     }
     
+    func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {
+        return Mapper<OMLargeSimpleArray>().map(JSONString: jsonString)
+    }
+    
+    func serializeLargeSimpleArray(_ object: LargeSimpleArray) -> String? {
+        return (object as? OMLargeSimpleArray)?.toJSONString()
+    }
+    
+    func testSerializeLargeSimpleArray1000Times() {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
+        
+        let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString) as? OMLargeSimpleArray
+        var jsonOutput: String?
+        
+        self.measure {
+            for _ in 1...1000 {
+                jsonOutput = self.serializeLargeSimpleArray(testObject!)
+            }
+        }
+        
+        XCTAssertEqual(true, jsonOutput?.contains("2016-09-01T15:02:14.978"))
+
+    }
+    
+    func testDeserializeLargeSimpleArray1000Times() {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
+        
+        var testObject: LargeSimpleArray!
+        self.measure {
+            for _ in 1...1000 {
+                testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
+            }
+        }
+        
+        XCTAssertEqual(100, testObject.data.count)
+        XCTAssertEqual("2016-09-01T15:02:14.978", testObject.data.first?.dateTime)
+        XCTAssertEqual(105.78500000000001, testObject.data.first?.open?.number)
+        XCTAssertEqual("105.7850", testObject.data.first?.open?.text)
+        XCTAssertEqual(105.81, testObject.data.first?.high?.number)
+        XCTAssertEqual("105.8100", testObject.data.first?.high?.text)
+        XCTAssertEqual(105.78500000000001, testObject.data.first?.low?.number)
+        XCTAssertEqual("105.7850", testObject.data.first?.low?.text)
+        XCTAssertEqual(105.805, testObject.data.first?.close?.number)
+        XCTAssertEqual("105.8050", testObject.data.first?.close?.text)
+        XCTAssertEqual(4511.0, testObject.data.first?.volume?.number)
+        XCTAssertEqual("4511", testObject.data.first?.volume?.text)
+        
+        
+    }
+    
 }

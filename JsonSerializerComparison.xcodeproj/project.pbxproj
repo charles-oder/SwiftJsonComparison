@@ -20,6 +20,8 @@
 		E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */; };
 		E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318621E2E91E800096942 /* LargeComplexFile.swift */; };
 		E1D318651E2E943800096942 /* ObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318641E2E943800096942 /* ObjectMapperTests.swift */; };
+		E1D318671E2EA75900096942 /* LargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318661E2EA75900096942 /* LargeSimpleArray.swift */; };
+		E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318681E2EA7FE00096942 /* OMLargeSimpleArray.swift */; };
 		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMLargeComplexFile.swift; sourceTree = "<group>"; };
 		E1D318621E2E91E800096942 /* LargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeComplexFile.swift; sourceTree = "<group>"; };
 		E1D318641E2E943800096942 /* ObjectMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperTests.swift; sourceTree = "<group>"; };
+		E1D318661E2EA75900096942 /* LargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeSimpleArray.swift; sourceTree = "<group>"; };
+		E1D318681E2EA7FE00096942 /* OMLargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMLargeSimpleArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */,
+				E1D318681E2EA7FE00096942 /* OMLargeSimpleArray.swift */,
 			);
 			path = ObjectMapperModels;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D318621E2E91E800096942 /* LargeComplexFile.swift */,
+				E1D318661E2EA75900096942 /* LargeSimpleArray.swift */,
 			);
 			name = TestModels;
 			sourceTree = "<group>";
@@ -387,7 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */,
+				E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */,
 				E1D318651E2E943800096942 /* ObjectMapperTests.swift in Sources */,
+				E1D318671E2EA75900096942 /* LargeSimpleArray.swift in Sources */,
 				E1D3185D1E2E8C7100096942 /* JsonLoader.swift in Sources */,
 				E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */,
 			);

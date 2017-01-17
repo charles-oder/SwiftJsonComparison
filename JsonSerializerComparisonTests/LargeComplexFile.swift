@@ -6,7 +6,7 @@
 //  Copyright © 2017 DTN. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public class LargeComplexFile {
     
