@@ -13,11 +13,13 @@
 		E1D3183B1E2E897A00096942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D318391E2E897A00096942 /* Main.storyboard */; };
 		E1D3183D1E2E897A00096942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D3183C1E2E897A00096942 /* Assets.xcassets */; };
 		E1D318401E2E897A00096942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D3183E1E2E897A00096942 /* LaunchScreen.storyboard */; };
-		E1D3184E1E2E8A2800096942 /* JsonSerializerComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */; };
 		E1D318591E2E8C3200096942 /* LargeComplexFIle.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D318561E2E8C3200096942 /* LargeComplexFIle.json */; };
 		E1D3185A1E2E8C3200096942 /* LargeSimpleArray.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D318571E2E8C3200096942 /* LargeSimpleArray.json */; };
 		E1D3185B1E2E8C3200096942 /* MediumFile.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D318581E2E8C3200096942 /* MediumFile.json */; };
 		E1D3185D1E2E8C7100096942 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3185C1E2E8C7100096942 /* JsonLoader.swift */; };
+		E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */; };
+		E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318621E2E91E800096942 /* LargeComplexFile.swift */; };
+		E1D318651E2E943800096942 /* ObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318641E2E943800096942 /* ObjectMapperTests.swift */; };
 		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,12 +48,14 @@
 		E1D3183F1E2E897A00096942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1D318411E2E897A00096942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D3184B1E2E8A2700096942 /* JsonSerializerComparisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonSerializerComparisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerComparisonTests.swift; sourceTree = "<group>"; };
 		E1D3184F1E2E8A2800096942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D318561E2E8C3200096942 /* LargeComplexFIle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LargeComplexFIle.json; sourceTree = "<group>"; };
 		E1D318571E2E8C3200096942 /* LargeSimpleArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LargeSimpleArray.json; sourceTree = "<group>"; };
 		E1D318581E2E8C3200096942 /* MediumFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MediumFile.json; sourceTree = "<group>"; };
 		E1D3185C1E2E8C7100096942 /* JsonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
+		E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMLargeComplexFile.swift; sourceTree = "<group>"; };
+		E1D318621E2E91E800096942 /* LargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeComplexFile.swift; sourceTree = "<group>"; };
+		E1D318641E2E943800096942 /* ObjectMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +134,11 @@
 		E1D3184C1E2E8A2800096942 /* JsonSerializerComparisonTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1D318611E2E91C400096942 /* TestModels */,
+				E1D3185E1E2E8D1900096942 /* ObjectMapperModels */,
+				E1D318641E2E943800096942 /* ObjectMapperTests.swift */,
 				E1D3185C1E2E8C7100096942 /* JsonLoader.swift */,
 				E1D318551E2E8AF800096942 /* TestData */,
-				E1D3184D1E2E8A2800096942 /* JsonSerializerComparisonTests.swift */,
 				E1D3184F1E2E8A2800096942 /* Info.plist */,
 			);
 			path = JsonSerializerComparisonTests;
@@ -146,6 +152,22 @@
 				E1D318581E2E8C3200096942 /* MediumFile.json */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		E1D3185E1E2E8D1900096942 /* ObjectMapperModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3185F1E2E8D5800096942 /* OMLargeComplexFile.swift */,
+			);
+			path = ObjectMapperModels;
+			sourceTree = "<group>";
+		};
+		E1D318611E2E91C400096942 /* TestModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1D318621E2E91E800096942 /* LargeComplexFile.swift */,
+			);
+			name = TestModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,8 +386,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */,
+				E1D318651E2E943800096942 /* ObjectMapperTests.swift in Sources */,
 				E1D3185D1E2E8C7100096942 /* JsonLoader.swift in Sources */,
-				E1D3184E1E2E8A2800096942 /* JsonSerializerComparisonTests.swift in Sources */,
+				E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -70,7 +70,7 @@
                        }
                        ],
              "customer": {
-             "id": "{{customerId}}",
+             "id": 1,
              "displayName": "George Sanders"
              },
              "salesRep": {
