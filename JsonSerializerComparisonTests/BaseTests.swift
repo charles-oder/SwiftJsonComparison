@@ -11,7 +11,7 @@ import ObjectMapper
 
 class BaseTests: XCTestCase {
     
-    let iterations = 1000
+    let iterations = 10
     
     func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
         return Mapper<OMLargeComplexFile>().map(JSONString: jsonString)
@@ -30,7 +30,7 @@ class BaseTests: XCTestCase {
     }
     
     func deserializeMediumFile(jsonString: String) -> MediumFile? {
-        return Mapper<OMMediumFile>().map(JSONString: jsonString)
+        return BaseSerializer().deserializeMediumFile(jsonString: jsonString)
     }
     
     func serializeMediumFile(_ object: MediumFile) -> String? {

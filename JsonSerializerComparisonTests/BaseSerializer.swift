@@ -31,9 +31,8 @@ public class BaseSerializer {
             return nil
         }
         do {
-            let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-            
-            return nil
+            let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any?]
+            return MediumFile(dict: dict)
         } catch {
             return nil
         }
