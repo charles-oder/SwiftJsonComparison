@@ -19,29 +19,42 @@ public class BaseSerializer {
     }
     
     func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {
+        if let dict = getDictForJsonString(json: jsonString) {
+            return LargeSimpleArray(dict: dict)
+        }
         return nil
     }
     
     func serializeLargeSimpleArray(_ object: LargeSimpleArray) -> String? {
-        return nil
+        return getJsonStringFromDict(dict: object.dict)
     }
     
     func deserializeMediumFile(jsonString: String) -> MediumFile? {
-        guard let data = jsonString.data(using: .utf8) else {
-            return nil
-        }
-        do {
-            let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any?]
+        if let dict = getDictForJsonString(json: jsonString) {
             return MediumFile(dict: dict)
+        }
+        return nil
+    }
+    
+    func serializeMediumFile(_ object: MediumFile) -> String? {
+        return getJsonStringFromDict(dict: object.dict)
+    }
+    
+    private func getJsonStringFromDict(dict: [String: Any?]) -> String? {
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
+            return String(data: jsonData, encoding: .utf8)
         } catch {
             return nil
         }
     }
     
-    func serializeMediumFile(_ object: MediumFile) -> String? {
+    private func getDictForJsonString(json: String) -> [String: Any?]? {
+        guard let data = json.data(using: .utf8) else {
+            return nil
+        }
         do {
-            let jsonData = try JSONSerialization.data(withJSONObject: object.dict, options: .prettyPrinted)
-            return String(data: jsonData, encoding: .utf8)
+            return try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any?]
         } catch {
             return nil
         }

@@ -22,11 +22,11 @@ class BaseTests: XCTestCase {
     }
     
     func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {
-        return Mapper<OMLargeSimpleArray>().map(JSONString: jsonString)
+        return BaseSerializer().deserializeLargeSimpleArray(jsonString: jsonString)
     }
     
     func serializeLargeSimpleArray(_ object: LargeSimpleArray) -> String? {
-        return (object as? OMLargeSimpleArray)?.toJSONString()
+        return BaseSerializer().serializeLargeSimpleArray(object)
     }
     
     func deserializeMediumFile(jsonString: String) -> MediumFile? {
@@ -40,7 +40,7 @@ class BaseTests: XCTestCase {
     func testSerializeLargeComplexObject1000Times() {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
         
-        let testObject = self.deserializeLargeComplexObject(jsonString: jsonString) as? OMLargeComplexFile
+        let testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
         var jsonOutput: String?
         
         self.measure {
@@ -136,7 +136,7 @@ class BaseTests: XCTestCase {
     func testSerializeLargeSimpleArray1000Times() {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
         
-        let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString) as? OMLargeSimpleArray
+        let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
         var jsonOutput: String?
         
         self.measure {
