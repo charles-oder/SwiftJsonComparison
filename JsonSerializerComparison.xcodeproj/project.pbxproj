@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33846309B0D091C77EE57983 /* Pods_JsonSerializerComparison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EE5F4ED2CF36985C15840D /* Pods_JsonSerializerComparison.framework */; };
 		E1AEEF791E2EF081007B6C88 /* BSLargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEEF781E2EF081007B6C88 /* BSLargeSimpleArray.swift */; };
+		E1AEEF7B1E2EF654007B6C88 /* BSLargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEEF7A1E2EF654007B6C88 /* BSLargeComplexFile.swift */; };
 		E1D318361E2E897A00096942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318351E2E897A00096942 /* AppDelegate.swift */; };
 		E1D318381E2E897A00096942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318371E2E897A00096942 /* ViewController.swift */; };
 		E1D3183B1E2E897A00096942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D318391E2E897A00096942 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		A93A478C9BC125BE90D3F0CD /* Pods-JsonSerializerComparisonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparisonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparisonTests/Pods-JsonSerializerComparisonTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSerializerComparison.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSerializerComparison/Pods-JsonSerializerComparison.release.xcconfig"; sourceTree = "<group>"; };
 		E1AEEF781E2EF081007B6C88 /* BSLargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSLargeSimpleArray.swift; sourceTree = "<group>"; };
+		E1AEEF7A1E2EF654007B6C88 /* BSLargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSLargeComplexFile.swift; sourceTree = "<group>"; };
 		E1D318321E2E897A00096942 /* JsonSerializerComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonSerializerComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D318351E2E897A00096942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D318371E2E897A00096942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		E1D318741E2EBB2100096942 /* BaseSerializationModels */ = {
 			isa = PBXGroup;
 			children = (
+				E1AEEF7A1E2EF654007B6C88 /* BSLargeComplexFile.swift */,
 				E1AEEF781E2EF081007B6C88 /* BSLargeSimpleArray.swift */,
 				E1D318751E2EBB5400096942 /* BSMediumFile.swift */,
 			);
@@ -418,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AEEF7B1E2EF654007B6C88 /* BSLargeComplexFile.swift in Sources */,
 				E1D318731E2EB56D00096942 /* BaseSerializer.swift in Sources */,
 				E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */,
 				E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */,

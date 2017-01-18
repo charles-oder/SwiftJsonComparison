@@ -11,11 +11,14 @@ import Foundation
 public class BaseSerializer {
     
     func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
+        if let dict = getDictForJsonString(json: jsonString) {
+            return LargeComplexFile(dict: dict)
+        }
         return nil
     }
     
     func serializeLargeComplexObject(_ object: LargeComplexFile) -> String? {
-        return nil
+        return getJsonStringFromDict(dict: object.dict)
     }
     
     func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {

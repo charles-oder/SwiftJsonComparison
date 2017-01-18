@@ -14,11 +14,11 @@ class BaseTests: XCTestCase {
     let iterations = 10
     
     func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
-        return Mapper<OMLargeComplexFile>().map(JSONString: jsonString)
+        return BaseSerializer().deserializeLargeComplexObject(jsonString: jsonString)
     }
     
     func serializeLargeComplexObject(_ object: LargeComplexFile) -> String? {
-        return (object as? OMLargeComplexFile)?.toJSONString()
+        return BaseSerializer().serializeLargeComplexObject(object)
     }
     
     func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {
