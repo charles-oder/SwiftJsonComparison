@@ -153,10 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				E1D318741E2EBB2100096942 /* BaseSerializationModels */,
+				E1D318701E2EB4BC00096942 /* BaseTests.swift */,
 				E1D318721E2EB56D00096942 /* BaseSerializer.swift */,
 				E1D318611E2E91C400096942 /* TestModels */,
 				E1D3185E1E2E8D1900096942 /* ObjectMapperModels */,
-				E1D318701E2EB4BC00096942 /* BaseTests.swift */,
 				E1D318641E2E943800096942 /* ObjectMapperTests.swift */,
 				E1D3185C1E2E8C7100096942 /* JsonLoader.swift */,
 				E1D318551E2E8AF800096942 /* TestData */,
