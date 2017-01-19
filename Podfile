@@ -1,4 +1,3 @@
-source 'git@bitbucket.org:dtnse/podspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.3'
