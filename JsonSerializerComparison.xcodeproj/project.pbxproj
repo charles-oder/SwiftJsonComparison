@@ -29,6 +29,30 @@
 		E1D318711E2EB4BC00096942 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318701E2EB4BC00096942 /* BaseTests.swift */; };
 		E1D318731E2EB56D00096942 /* BaseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318721E2EB56D00096942 /* BaseSerializer.swift */; };
 		E1D318761E2EBB5400096942 /* BSMediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318751E2EBB5400096942 /* BSMediumFile.swift */; };
+		E1FA2F951E304F2800A44956 /* SwiftyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F941E304F2800A44956 /* SwiftyJSONTests.swift */; };
+		E1FA2FB01E3051B100A44956 /* SJLCFCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F971E3051B100A44956 /* SJLCFCategory.swift */; };
+		E1FA2FB11E3051B100A44956 /* SJLCFCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F981E3051B100A44956 /* SJLCFCustomer.swift */; };
+		E1FA2FB21E3051B100A44956 /* SJLCFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F991E3051B100A44956 /* SJLCFData.swift */; };
+		E1FA2FB31E3051B100A44956 /* SJLCFDiscountPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9A1E3051B100A44956 /* SJLCFDiscountPrograms.swift */; };
+		E1FA2FB41E3051B100A44956 /* SJLCFItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9B1E3051B100A44956 /* SJLCFItems.swift */; };
+		E1FA2FB51E3051B100A44956 /* SJLCFLargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9C1E3051B100A44956 /* SJLCFLargeComplexFile.swift */; };
+		E1FA2FB61E3051B100A44956 /* SJLCFOrderForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9D1E3051B100A44956 /* SJLCFOrderForm.swift */; };
+		E1FA2FB71E3051B100A44956 /* SJLCFPaymentTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9E1E3051B100A44956 /* SJLCFPaymentTerms.swift */; };
+		E1FA2FB81E3051B100A44956 /* SJLCFSalesRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2F9F1E3051B100A44956 /* SJLCFSalesRep.swift */; };
+		E1FA2FB91E3051B100A44956 /* SJLCFSalesTerritories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA01E3051B100A44956 /* SJLCFSalesTerritories.swift */; };
+		E1FA2FBA1E3051B100A44956 /* SJLCFSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA11E3051B100A44956 /* SJLCFSeason.swift */; };
+		E1FA2FBB1E3051B100A44956 /* SJLCFSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA21E3051B100A44956 /* SJLCFSolutions.swift */; };
+		E1FA2FBC1E3051B100A44956 /* SJLSAClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA41E3051B100A44956 /* SJLSAClose.swift */; };
+		E1FA2FBD1E3051B100A44956 /* SJLSAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA51E3051B100A44956 /* SJLSAData.swift */; };
+		E1FA2FBE1E3051B100A44956 /* SJLSAHigh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA61E3051B100A44956 /* SJLSAHigh.swift */; };
+		E1FA2FBF1E3051B100A44956 /* SJLSALargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA71E3051B100A44956 /* SJLSALargeSimpleArray.swift */; };
+		E1FA2FC01E3051B100A44956 /* SJLSALow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA81E3051B100A44956 /* SJLSALow.swift */; };
+		E1FA2FC11E3051B100A44956 /* SJLSAOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FA91E3051B100A44956 /* SJLSAOpen.swift */; };
+		E1FA2FC21E3051B100A44956 /* SJLSAVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAA1E3051B100A44956 /* SJLSAVolume.swift */; };
+		E1FA2FC31E3051B100A44956 /* SJMFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAC1E3051B100A44956 /* SJMFData.swift */; };
+		E1FA2FC41E3051B100A44956 /* SJMFMediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAD1E3051B100A44956 /* SJMFMediumFile.swift */; };
+		E1FA2FC51E3051B100A44956 /* SJMFMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAE1E3051B100A44956 /* SJMFMeta.swift */; };
+		E1FA2FC61E3051B100A44956 /* SJMFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */; };
 		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +98,30 @@
 		E1D318701E2EB4BC00096942 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		E1D318721E2EB56D00096942 /* BaseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSerializer.swift; sourceTree = "<group>"; };
 		E1D318751E2EBB5400096942 /* BSMediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMediumFile.swift; sourceTree = "<group>"; };
+		E1FA2F941E304F2800A44956 /* SwiftyJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONTests.swift; sourceTree = "<group>"; };
+		E1FA2F971E3051B100A44956 /* SJLCFCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFCategory.swift; sourceTree = "<group>"; };
+		E1FA2F981E3051B100A44956 /* SJLCFCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFCustomer.swift; sourceTree = "<group>"; };
+		E1FA2F991E3051B100A44956 /* SJLCFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFData.swift; sourceTree = "<group>"; };
+		E1FA2F9A1E3051B100A44956 /* SJLCFDiscountPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFDiscountPrograms.swift; sourceTree = "<group>"; };
+		E1FA2F9B1E3051B100A44956 /* SJLCFItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFItems.swift; sourceTree = "<group>"; };
+		E1FA2F9C1E3051B100A44956 /* SJLCFLargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFLargeComplexFile.swift; sourceTree = "<group>"; };
+		E1FA2F9D1E3051B100A44956 /* SJLCFOrderForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFOrderForm.swift; sourceTree = "<group>"; };
+		E1FA2F9E1E3051B100A44956 /* SJLCFPaymentTerms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFPaymentTerms.swift; sourceTree = "<group>"; };
+		E1FA2F9F1E3051B100A44956 /* SJLCFSalesRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFSalesRep.swift; sourceTree = "<group>"; };
+		E1FA2FA01E3051B100A44956 /* SJLCFSalesTerritories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFSalesTerritories.swift; sourceTree = "<group>"; };
+		E1FA2FA11E3051B100A44956 /* SJLCFSeason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFSeason.swift; sourceTree = "<group>"; };
+		E1FA2FA21E3051B100A44956 /* SJLCFSolutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLCFSolutions.swift; sourceTree = "<group>"; };
+		E1FA2FA41E3051B100A44956 /* SJLSAClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSAClose.swift; sourceTree = "<group>"; };
+		E1FA2FA51E3051B100A44956 /* SJLSAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSAData.swift; sourceTree = "<group>"; };
+		E1FA2FA61E3051B100A44956 /* SJLSAHigh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSAHigh.swift; sourceTree = "<group>"; };
+		E1FA2FA71E3051B100A44956 /* SJLSALargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSALargeSimpleArray.swift; sourceTree = "<group>"; };
+		E1FA2FA81E3051B100A44956 /* SJLSALow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSALow.swift; sourceTree = "<group>"; };
+		E1FA2FA91E3051B100A44956 /* SJLSAOpen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSAOpen.swift; sourceTree = "<group>"; };
+		E1FA2FAA1E3051B100A44956 /* SJLSAVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLSAVolume.swift; sourceTree = "<group>"; };
+		E1FA2FAC1E3051B100A44956 /* SJMFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFData.swift; sourceTree = "<group>"; };
+		E1FA2FAD1E3051B100A44956 /* SJMFMediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFMediumFile.swift; sourceTree = "<group>"; };
+		E1FA2FAE1E3051B100A44956 /* SJMFMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFMeta.swift; sourceTree = "<group>"; };
+		E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFSymbols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +200,7 @@
 		E1D3184C1E2E8A2800096942 /* JsonSerializerComparisonTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1FA2F691E304AFC00A44956 /* SwiftyJSONModels */,
 				E1D318741E2EBB2100096942 /* BaseSerializationModels */,
 				E1D318701E2EB4BC00096942 /* BaseTests.swift */,
 				E1D318721E2EB56D00096942 /* BaseSerializer.swift */,
@@ -161,6 +210,7 @@
 				E1D3185C1E2E8C7100096942 /* JsonLoader.swift */,
 				E1D318551E2E8AF800096942 /* TestData */,
 				E1D3184F1E2E8A2800096942 /* Info.plist */,
+				E1FA2F941E304F2800A44956 /* SwiftyJSONTests.swift */,
 			);
 			path = JsonSerializerComparisonTests;
 			sourceTree = "<group>";
@@ -203,6 +253,60 @@
 				E1D318751E2EBB5400096942 /* BSMediumFile.swift */,
 			);
 			path = BaseSerializationModels;
+			sourceTree = "<group>";
+		};
+		E1FA2F691E304AFC00A44956 /* SwiftyJSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA2F961E3051B100A44956 /* LCF */,
+				E1FA2FA31E3051B100A44956 /* LSA */,
+				E1FA2FAB1E3051B100A44956 /* MF */,
+			);
+			path = SwiftyJSONModels;
+			sourceTree = "<group>";
+		};
+		E1FA2F961E3051B100A44956 /* LCF */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA2F971E3051B100A44956 /* SJLCFCategory.swift */,
+				E1FA2F981E3051B100A44956 /* SJLCFCustomer.swift */,
+				E1FA2F991E3051B100A44956 /* SJLCFData.swift */,
+				E1FA2F9A1E3051B100A44956 /* SJLCFDiscountPrograms.swift */,
+				E1FA2F9B1E3051B100A44956 /* SJLCFItems.swift */,
+				E1FA2F9C1E3051B100A44956 /* SJLCFLargeComplexFile.swift */,
+				E1FA2F9D1E3051B100A44956 /* SJLCFOrderForm.swift */,
+				E1FA2F9E1E3051B100A44956 /* SJLCFPaymentTerms.swift */,
+				E1FA2F9F1E3051B100A44956 /* SJLCFSalesRep.swift */,
+				E1FA2FA01E3051B100A44956 /* SJLCFSalesTerritories.swift */,
+				E1FA2FA11E3051B100A44956 /* SJLCFSeason.swift */,
+				E1FA2FA21E3051B100A44956 /* SJLCFSolutions.swift */,
+			);
+			path = LCF;
+			sourceTree = "<group>";
+		};
+		E1FA2FA31E3051B100A44956 /* LSA */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA2FA41E3051B100A44956 /* SJLSAClose.swift */,
+				E1FA2FA51E3051B100A44956 /* SJLSAData.swift */,
+				E1FA2FA61E3051B100A44956 /* SJLSAHigh.swift */,
+				E1FA2FA71E3051B100A44956 /* SJLSALargeSimpleArray.swift */,
+				E1FA2FA81E3051B100A44956 /* SJLSALow.swift */,
+				E1FA2FA91E3051B100A44956 /* SJLSAOpen.swift */,
+				E1FA2FAA1E3051B100A44956 /* SJLSAVolume.swift */,
+			);
+			path = LSA;
+			sourceTree = "<group>";
+		};
+		E1FA2FAB1E3051B100A44956 /* MF */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA2FAC1E3051B100A44956 /* SJMFData.swift */,
+				E1FA2FAD1E3051B100A44956 /* SJMFMediumFile.swift */,
+				E1FA2FAE1E3051B100A44956 /* SJMFMeta.swift */,
+				E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */,
+			);
+			path = MF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,19 +525,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FA2FBA1E3051B100A44956 /* SJLCFSeason.swift in Sources */,
 				E1AEEF7B1E2EF654007B6C88 /* BSLargeComplexFile.swift in Sources */,
+				E1FA2FBC1E3051B100A44956 /* SJLSAClose.swift in Sources */,
 				E1D318731E2EB56D00096942 /* BaseSerializer.swift in Sources */,
+				E1FA2FB11E3051B100A44956 /* SJLCFCustomer.swift in Sources */,
 				E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */,
+				E1FA2FB61E3051B100A44956 /* SJLCFOrderForm.swift in Sources */,
+				E1FA2FB21E3051B100A44956 /* SJLCFData.swift in Sources */,
 				E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */,
+				E1FA2FB71E3051B100A44956 /* SJLCFPaymentTerms.swift in Sources */,
 				E1D3186D1E2EB00800096942 /* OMMediumFile.swift in Sources */,
 				E1D318651E2E943800096942 /* ObjectMapperTests.swift in Sources */,
+				E1FA2FB81E3051B100A44956 /* SJLCFSalesRep.swift in Sources */,
+				E1FA2FB01E3051B100A44956 /* SJLCFCategory.swift in Sources */,
+				E1FA2FC41E3051B100A44956 /* SJMFMediumFile.swift in Sources */,
+				E1FA2FB41E3051B100A44956 /* SJLCFItems.swift in Sources */,
+				E1FA2FBF1E3051B100A44956 /* SJLSALargeSimpleArray.swift in Sources */,
 				E1D318671E2EA75900096942 /* LargeSimpleArray.swift in Sources */,
+				E1FA2FC21E3051B100A44956 /* SJLSAVolume.swift in Sources */,
+				E1FA2F951E304F2800A44956 /* SwiftyJSONTests.swift in Sources */,
+				E1FA2FBD1E3051B100A44956 /* SJLSAData.swift in Sources */,
 				E1D318761E2EBB5400096942 /* BSMediumFile.swift in Sources */,
+				E1FA2FBB1E3051B100A44956 /* SJLCFSolutions.swift in Sources */,
+				E1FA2FBE1E3051B100A44956 /* SJLSAHigh.swift in Sources */,
+				E1FA2FC51E3051B100A44956 /* SJMFMeta.swift in Sources */,
 				E1D3186B1E2EAEA900096942 /* MediumFile.swift in Sources */,
 				E1AEEF791E2EF081007B6C88 /* BSLargeSimpleArray.swift in Sources */,
 				E1D3185D1E2E8C7100096942 /* JsonLoader.swift in Sources */,
+				E1FA2FC11E3051B100A44956 /* SJLSAOpen.swift in Sources */,
 				E1D318601E2E8D5800096942 /* OMLargeComplexFile.swift in Sources */,
+				E1FA2FB91E3051B100A44956 /* SJLCFSalesTerritories.swift in Sources */,
+				E1FA2FC31E3051B100A44956 /* SJMFData.swift in Sources */,
+				E1FA2FB31E3051B100A44956 /* SJLCFDiscountPrograms.swift in Sources */,
+				E1FA2FC61E3051B100A44956 /* SJMFSymbols.swift in Sources */,
+				E1FA2FC01E3051B100A44956 /* SJLSALow.swift in Sources */,
 				E1D318711E2EB4BC00096942 /* BaseTests.swift in Sources */,
+				E1FA2FB51E3051B100A44956 /* SJLCFLargeComplexFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
