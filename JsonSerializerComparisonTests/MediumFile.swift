@@ -9,7 +9,7 @@
 import Foundation
 
 public class MediumFile {
-    public var metaData: Metadata?
+    public var meta: Metadata?
     public var data: [SimpleData] = []
 }
 

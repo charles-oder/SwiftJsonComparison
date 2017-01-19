@@ -41,7 +41,7 @@ public class OMOrder: Order, Mappable {
     }
     
     public func mapping(map: Map) {
-        orderId                 <- map ["id"]
+        id                      <- map ["id"]
         idSalesTerritory        <- map ["idSalesTerritory"]
         date                    <- map ["date"]
         status                  <- map ["status"]
@@ -56,10 +56,10 @@ public class OMOrder: Order, Mappable {
         om_paymentTerm          <- map ["paymentTerm"]
         startDeliveryDate       <- map ["startDeliveryDate"]
         endDeliveryDate         <- map ["endDeliveryDate"]
-        createdDate             <- map ["created"]
-        createdById             <- map ["createdBy"]
-        modifiedDate            <- map ["modified"]
-        modifiedId              <- map ["modifiedBy"]
+        created                 <- map ["created"]
+        createdBy               <- map ["createdBy"]
+        modified                <- map ["modified"]
+        modifiedBy              <- map ["modifiedBy"]
         signature               <- map ["signature"]
     }
     
@@ -110,18 +110,18 @@ public class OMOrderForm: OrderForm, Mappable {
     }
     
     public func mapping(map: Map) {
-        orderFormId         <- map["id"]
-        name                <- map["name"]
-        active              <- map["active"]
-        om_season              <- map["season"]
-        om_salesTerritories    <- map["salesTerritories"]
-        om_solutions           <- map["solutions"]
-        om_paymentTerms        <- map["paymentTerms"]
-        templateTerms       <- map["templateTerms"]
-        createdDateString   <- map["created"]
-        createdById         <- map["createdBy"]
-        modifiedDateString  <- map["modified"]
-        modifiedById        <- map["modifiedBy"]
+        id                      <- map["id"]
+        name                    <- map["name"]
+        active                  <- map["active"]
+        om_season               <- map["season"]
+        om_salesTerritories     <- map["salesTerritories"]
+        om_solutions            <- map["solutions"]
+        om_paymentTerms         <- map["paymentTerms"]
+        templateTerms           <- map["templateTerms"]
+        created                 <- map["created"]
+        createdBy               <- map["createdBy"]
+        modified                <- map["modified"]
+        modifiedBy              <- map["modifiedBy"]
     }
     
 }
@@ -163,9 +163,9 @@ public class OMSolution: Solution, Mappable {
     }
     
     public func mapping(map: Map) {
-        solutionId              <- map["id"]
+        id                      <- map["id"]
         displayName             <- map["displayName"]
-        uom                     <- map["UOMName"]
+        UOMName                     <- map["UOMName"]
         om_category             <- map["category"]
         deviations              <- map["deviations"]
         om_discountPrograms     <- map["discountPrograms"]
@@ -180,7 +180,7 @@ public class OMDiscountProgram: DiscountProgram, Mappable {
     }
     
     public func mapping(map: Map) {
-        discountId          <- map["id"]
+        id                  <- map["id"]
         name                <- map["name"]
         active              <- map["active"]
         operation           <- map["operation"]
@@ -196,7 +196,7 @@ public class OMPaymentTerm: PaymentTerm, Mappable {
     }
     
     public func mapping(map: Map) {
-        paymentTermId           <- map["id"]
+        id                      <- map["id"]
         name                    <- map["name"]
         paymentTermDescription  <- map["description"]
         active                  <- map["active"]

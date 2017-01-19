@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class OMMediumFile: MediumFile, Mappable {
-    public var om_metaData: OMMetadata? { didSet { metaData = om_metaData } }
+    public var om_metaData: OMMetadata? { didSet { meta = om_metaData } }
     public var om_data: [OMSimpleData] = [] { didSet { data = om_data } }
 
     required public init?(map: Map) {

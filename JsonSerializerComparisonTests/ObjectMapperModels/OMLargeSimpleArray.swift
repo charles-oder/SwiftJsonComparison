@@ -25,18 +25,18 @@ public class OMLargeSimpleArray: LargeSimpleArray, Mappable {
 
 public class OMQuoteEntry: QuoteEntry, Mappable {
 
-    public var om_open: OMQuoteValue? { didSet { open = om_open } }
-    public var om_high: OMQuoteValue? { didSet { high = om_high } }
-    public var om_low: OMQuoteValue? { didSet { low = om_low } }
-    public var om_close: OMQuoteValue? { didSet { close = om_close } }
-    public var om_volume: OMQuoteValue? { didSet { volume = om_volume } }
+    public var om_open: OMQuoteValue? { didSet { Open = om_open } }
+    public var om_high: OMQuoteValue? { didSet { High = om_high } }
+    public var om_low: OMQuoteValue? { didSet { Low = om_low } }
+    public var om_close: OMQuoteValue? { didSet { Close = om_close } }
+    public var om_volume: OMQuoteValue? { didSet { Volume = om_volume } }
     
     required public init?(map: Map) {
         
     }
     
     public func mapping(map: Map) {
-        dateTime    <- map["DateTime"]
+        DateTime    <- map["DateTime"]
         om_open     <- map["Open"]
         om_high     <- map["High"]
         om_low     <- map["Low"]

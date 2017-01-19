@@ -45,7 +45,7 @@ public extension Order {
     
     convenience init?(dict: [String: Any?]) {
         self.init()
-        orderId = dict["id"] as? Int
+        id = dict["id"] as? Int
         idSalesTerritory = dict["idSalesTerritory"] as? Int
         date = dict["date"] as? String
         status = dict["status"] as? String
@@ -75,15 +75,15 @@ public extension Order {
         }
         startDeliveryDate = dict["startDeliveryDate"] as? String
         endDeliveryDate = dict["endDeliveryDate"] as? String
-        createdDate = dict["created"] as? String
-        createdById = dict["createdBy"] as? Int
-        modifiedDate = dict["modified"] as? String
-        modifiedId = dict["modifiedBy"] as? Int
+        created = dict["created"] as? String
+        createdBy = dict["createdBy"] as? Int
+        modified = dict["modified"] as? String
+        modifiedBy = dict["modifiedBy"] as? Int
         signature = dict["signature"] as? String
     }
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
-        output["id"] = orderId
+        output["id"] = id
         output["idSalesTerritory"] = idSalesTerritory
         output["date"] = date
         output["status"] = status
@@ -104,10 +104,10 @@ public extension Order {
         output["paymentTerm"] = paymentTerm?.dict
         output["startDeliveryDate"] = startDeliveryDate
         output["endDeliveryDate"] = endDeliveryDate
-        output["created"] = createdDate
-        output["createdBy"] = createdById
-        output["modified"] = modifiedDate
-        output["modifiedBy"] = modifiedId
+        output["created"] = created
+        output["createdBy"] = createdBy
+        output["modified"] = modified
+        output["modifiedBy"] = modified
         output["signature"] = signature
         return output
     }
@@ -158,7 +158,7 @@ public extension OrderForm {
     
     convenience init?(dict: [String: Any?]) {
         self.init()
-        orderFormId = dict["id"] as? Int
+        id = dict["id"] as? Int
         name = dict["name"] as? String
         active = dict["active"] as? Int
         if let value = dict["season"] as? [String: Any?] {
@@ -186,14 +186,14 @@ public extension OrderForm {
             }
         }
         templateTerms = dict["templateTerms"] as? String
-        createdDateString = dict["created"] as? String
-        createdById = dict["createdBy"] as? Int
-        modifiedDateString = dict["modified"] as? String
-        modifiedById = dict["modifiedBy"] as? Int
+        created = dict["created"] as? String
+        createdBy = dict["createdBy"] as? Int
+        modified = dict["modified"] as? String
+        modifiedBy = dict["modifiedBy"] as? Int
     }
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
-        output["id"] = orderFormId
+        output["id"] = id
         output["name"] = name
         output["active"] = active
         output["season"] = season?.dict
@@ -213,10 +213,10 @@ public extension OrderForm {
         }
         output["paymentTerms"] = paymentTermsDictArray
         output["templateTerms"] = templateTerms
-        output["created"] = createdDateString
-        output["createdBy"] = createdById
-        output["modified"] = modifiedDateString
-        output["modifiedBy"] = modifiedById
+        output["created"] = created
+        output["createdBy"] = createdBy
+        output["modified"] = modified
+        output["modifiedBy"] = modifiedBy
         return output
     }
     
@@ -260,9 +260,9 @@ public extension Solution {
     
     convenience init?(dict: [String: Any?]) {
         self.init()
-        solutionId = dict["id"] as? Int
+        id = dict["id"] as? Int
         displayName = dict["displayName"] as? String
-        uom = dict["UOMName"] as? String
+        UOMName = dict["UOMName"] as? String
         if let value = dict["category"] as? [String: Any?] {
             category = ObjectType(dict: value)
         }
@@ -279,9 +279,9 @@ public extension Solution {
     }
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
-        output["id"] = solutionId
+        output["id"] = id
         output["displayName"] = displayName
-        output["UOMName"] = uom
+        output["UOMName"] = UOMName
         output["category"] = category?.dict
         output["deviations"] = deviations
         var discountProgramsDictArray: [[String: Any?]] = []
@@ -298,7 +298,7 @@ public extension DiscountProgram {
     
     convenience init?(dict: [String: Any?]) {
         self.init()
-        discountId = dict["id"] as? Int
+        id = dict["id"] as? Int
         name = dict["name"] as? String
         active = dict["active"] as? Int
         operation = dict["operation"] as? String
@@ -306,7 +306,7 @@ public extension DiscountProgram {
     }
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
-        output["id"] = discountId
+        output["id"] = id
         output["name"] = name
         output["active"] = active
         output["operation"] = operation
@@ -320,7 +320,7 @@ public extension PaymentTerm {
     
     convenience init?(dict: [String: Any?]) {
         self.init()
-        paymentTermId = dict["id"] as? Int
+        id = dict["id"] as? Int
         name = dict["name"] as? String
         paymentTermDescription = dict["description"] as? String
         active = dict["active"] as? Int
@@ -328,7 +328,7 @@ public extension PaymentTerm {
     }
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
-        output["id"] = paymentTermId
+        output["id"] = id
         output["name"] = name
         output["description"] = paymentTermDescription
         output["active"] = active

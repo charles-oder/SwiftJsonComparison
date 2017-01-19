@@ -19,7 +19,7 @@ public class LargeComplexFile {
 
 public class Order {
     
-    public var orderId: Int?
+    public var id: Int?
     public var date: String?
     public var status: String?
     public var orderForm: OrderForm?
@@ -34,10 +34,10 @@ public class Order {
     public var note: String?
     public var startDeliveryDate: String?
     public var endDeliveryDate: String?
-    public var createdDate: String?
-    public var createdById: Int?
-    public var modifiedDate: String?
-    public var modifiedId: Int?
+    public var created: String?
+    public var createdBy: Int?
+    public var modified: String?
+    public var modifiedBy: Int?
     public var signature: String?
     
     
@@ -63,7 +63,7 @@ public class Person {
 
 public class OrderForm {
     
-    public var orderFormId: Int?
+    public var id: Int?
     public var name: String?
     public var active: Int?
     public var season: Season?
@@ -71,10 +71,10 @@ public class OrderForm {
     public var solutions = [Solution]()
     public var paymentTerms = [PaymentTerm]()
     public var templateTerms: String?
-    public var createdDateString: String?
-    public var createdById: Int?
-    public var modifiedDateString: String?
-    public var modifiedById: Int?
+    public var created: String?
+    public var createdBy: Int?
+    public var modified: String?
+    public var modifiedBy: Int?
     
 }
 
@@ -95,9 +95,9 @@ public class ObjectType {
 
 public class Solution {
     
-    public var solutionId: Int?
+    public var id: Int?
     public var displayName: String?
-    public var uom: String?
+    public var UOMName: String?
     public var category: ObjectType?
     public var deviations: [String] = []
     public var discountPrograms = [DiscountProgram]()
@@ -106,7 +106,7 @@ public class Solution {
 
 public class DiscountProgram {
     
-    public var discountId: Int?
+    public var id: Int?
     public var name: String?
     public var active: Int?
     public var operation: String?
@@ -116,7 +116,7 @@ public class DiscountProgram {
 
 public class PaymentTerm {
     
-    public var paymentTermId: Int?
+    public var id: Int?
     public var name: String?
     public var paymentTermDescription: String?
     public var active: Int?

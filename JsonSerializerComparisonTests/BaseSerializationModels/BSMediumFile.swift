@@ -12,7 +12,7 @@ public extension MediumFile {
     convenience init?(dict: [String: Any?]) {
         self.init()
         if let metaDict = dict["meta"] as? [String: Any?] {
-            metaData = Metadata(dict: metaDict)
+            meta = Metadata(dict: metaDict)
         }
         if let dataDictArray = dict["data"] as? [[String: Any?]] {
             data = []
@@ -26,7 +26,7 @@ public extension MediumFile {
     public var dict: [String: Any?] {
         var dict: [String:Any?] = [:]
         
-        if let objectMetadata = metaData {
+        if let objectMetadata = meta {
             dict["meta"] = objectMetadata.dict
         }
         

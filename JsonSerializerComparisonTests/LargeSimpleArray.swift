@@ -13,12 +13,12 @@ public class LargeSimpleArray {
 }
 
 public class QuoteEntry {
-    public var dateTime: String?
-    public var open: QuoteValue?
-    public var high: QuoteValue?
-    public var low: QuoteValue?
-    public var close: QuoteValue?
-    public var volume: QuoteValue?
+    public var DateTime: String?
+    public var Open: QuoteValue?
+    public var High: QuoteValue?
+    public var Low: QuoteValue?
+    public var Close: QuoteValue?
+    public var Volume: QuoteValue?
 }
 
 public class QuoteValue {

@@ -35,31 +35,31 @@ public extension QuoteEntry {
 
     convenience init?(dict: [String: Any?]) {
         self.init()
-        dateTime = dict["DateTime"] as? String
+        DateTime = dict["DateTime"] as? String
         if let value = dict["Open"] as? [String: Any?] {
-            open = QuoteValue(dict: value)
+            Open = QuoteValue(dict: value)
         }
         if let value = dict["High"] as? [String: Any?] {
-            high = QuoteValue(dict: value)
+            High = QuoteValue(dict: value)
         }
         if let value = dict["Low"] as? [String: Any?] {
-            low = QuoteValue(dict: value)
+            Low = QuoteValue(dict: value)
         }
         if let value = dict["Close"] as? [String: Any?] {
-            close = QuoteValue(dict: value)
+            Close = QuoteValue(dict: value)
         }
         if let value = dict["Volume"] as? [String: Any?] {
-            volume = QuoteValue(dict: value)
+            Volume = QuoteValue(dict: value)
         }
     }
     public var dict: [String: Any?] {
         var symbolDict: [String:Any?] = [:]
-        symbolDict["DateTime"] = dateTime
-        symbolDict["Open"] = open?.dict
-        symbolDict["High"] = high?.dict
-        symbolDict["Low"] = low?.dict
-        symbolDict["Close"] = close?.dict
-        symbolDict["Volume"] = volume?.dict
+        symbolDict["DateTime"] = DateTime
+        symbolDict["Open"] = Open?.dict
+        symbolDict["High"] = High?.dict
+        symbolDict["Low"] = Low?.dict
+        symbolDict["Close"] = Close?.dict
+        symbolDict["Volume"] = Volume?.dict
         return symbolDict
     }
 }
