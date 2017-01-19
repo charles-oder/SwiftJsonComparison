@@ -56,9 +56,9 @@ class SwiftyJSONTests: XCTestCase {
         let testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeLargeComplexObject(testObject!)
+                jsonOutput = self?.serializeLargeComplexObject(testObject!)
             }
         }
         
@@ -70,9 +70,9 @@ class SwiftyJSONTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
         
         var testObject: SJLCFLargeComplexFile!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
+                testObject = self?.deserializeLargeComplexObject(jsonString: jsonString)
             }
         }
         
@@ -152,9 +152,9 @@ class SwiftyJSONTests: XCTestCase {
         let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeLargeSimpleArray(testObject!)
+                jsonOutput = self?.serializeLargeSimpleArray(testObject!)
             }
         }
         
@@ -166,9 +166,9 @@ class SwiftyJSONTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
         
         var testObject: SJLSALargeSimpleArray!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
+                testObject = self?.deserializeLargeSimpleArray(jsonString: jsonString)
             }
         }
         
@@ -194,9 +194,9 @@ class SwiftyJSONTests: XCTestCase {
         let testObject = self.deserializeMediumFile(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeMediumFile(testObject!)
+                jsonOutput = self?.serializeMediumFile(testObject!)
             }
         }
         
@@ -208,9 +208,9 @@ class SwiftyJSONTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
         
         var testObject: SJMFMediumFile!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeMediumFile(jsonString: jsonString)
+                testObject = self?.deserializeMediumFile(jsonString: jsonString)
             }
         }
         

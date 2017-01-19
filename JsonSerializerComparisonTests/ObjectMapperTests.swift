@@ -41,9 +41,9 @@ class ObjectMapperTests: XCTestCase {
         let testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeLargeComplexObject(testObject!)
+                jsonOutput = self?.serializeLargeComplexObject(testObject!)
             }
         }
         
@@ -55,9 +55,9 @@ class ObjectMapperTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
         
         var testObject: OMLargeComplexFile!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
+                testObject = self?.deserializeLargeComplexObject(jsonString: jsonString)
             }
         }
         
@@ -137,9 +137,9 @@ class ObjectMapperTests: XCTestCase {
         let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeLargeSimpleArray(testObject!)
+                jsonOutput = self?.serializeLargeSimpleArray(testObject!)
             }
         }
         
@@ -151,9 +151,9 @@ class ObjectMapperTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
         
         var testObject: OMLargeSimpleArray!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
+                testObject = self?.deserializeLargeSimpleArray(jsonString: jsonString)
             }
         }
         
@@ -179,9 +179,9 @@ class ObjectMapperTests: XCTestCase {
         let testObject = self.deserializeMediumFile(jsonString: jsonString)
         var jsonOutput: String?
         
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                jsonOutput = self.serializeMediumFile(testObject!)
+                jsonOutput = self?.serializeMediumFile(testObject!)
             }
         }
         
@@ -193,9 +193,9 @@ class ObjectMapperTests: XCTestCase {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
         
         var testObject: OMMediumFile!
-        self.measure {
+        self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
-                testObject = self.deserializeMediumFile(jsonString: jsonString)
+                testObject = self?.deserializeMediumFile(jsonString: jsonString)
             }
         }
         
