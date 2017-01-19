@@ -6,6 +6,7 @@ use_frameworks!
 def connect_pods
     pod 'ObjectMapper'
     pod 'SwiftyJSON'
+    pod 'Gloss', '~> 1.2'
 end
 
 target "JsonSerializerComparison" do

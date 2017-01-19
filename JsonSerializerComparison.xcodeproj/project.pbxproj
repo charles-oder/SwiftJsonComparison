@@ -53,6 +53,10 @@
 		E1FA2FC41E3051B100A44956 /* SJMFMediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAD1E3051B100A44956 /* SJMFMediumFile.swift */; };
 		E1FA2FC51E3051B100A44956 /* SJMFMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAE1E3051B100A44956 /* SJMFMeta.swift */; };
 		E1FA2FC61E3051B100A44956 /* SJMFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */; };
+		E1FA2FCB1E305DD800A44956 /* GLLargeComplexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FC81E305DD800A44956 /* GLLargeComplexFile.swift */; };
+		E1FA2FCC1E305DD800A44956 /* GLLargeSimpleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FC91E305DD800A44956 /* GLLargeSimpleArray.swift */; };
+		E1FA2FCD1E305DD800A44956 /* GLMediumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FCA1E305DD800A44956 /* GLMediumFile.swift */; };
+		E1FA2FCF1E3060DF00A44956 /* GlossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA2FCE1E3060DF00A44956 /* GlossTests.swift */; };
 		E406B79EE39BA52BE14C778B /* Pods_JsonSerializerComparisonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950406E0DBC4357351792EEA /* Pods_JsonSerializerComparisonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +126,10 @@
 		E1FA2FAD1E3051B100A44956 /* SJMFMediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFMediumFile.swift; sourceTree = "<group>"; };
 		E1FA2FAE1E3051B100A44956 /* SJMFMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFMeta.swift; sourceTree = "<group>"; };
 		E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJMFSymbols.swift; sourceTree = "<group>"; };
+		E1FA2FC81E305DD800A44956 /* GLLargeComplexFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLLargeComplexFile.swift; sourceTree = "<group>"; };
+		E1FA2FC91E305DD800A44956 /* GLLargeSimpleArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLLargeSimpleArray.swift; sourceTree = "<group>"; };
+		E1FA2FCA1E305DD800A44956 /* GLMediumFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLMediumFile.swift; sourceTree = "<group>"; };
+		E1FA2FCE1E3060DF00A44956 /* GlossTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,8 @@
 		E1D3184C1E2E8A2800096942 /* JsonSerializerComparisonTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1FA2FC71E305D9F00A44956 /* GlossModels */,
+				E1FA2FCE1E3060DF00A44956 /* GlossTests.swift */,
 				E1FA2F691E304AFC00A44956 /* SwiftyJSONModels */,
 				E1D318741E2EBB2100096942 /* BaseSerializationModels */,
 				E1D318701E2EB4BC00096942 /* BaseTests.swift */,
@@ -307,6 +317,16 @@
 				E1FA2FAF1E3051B100A44956 /* SJMFSymbols.swift */,
 			);
 			path = MF;
+			sourceTree = "<group>";
+		};
+		E1FA2FC71E305D9F00A44956 /* GlossModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA2FC81E305DD800A44956 /* GLLargeComplexFile.swift */,
+				E1FA2FC91E305DD800A44956 /* GLLargeSimpleArray.swift */,
+				E1FA2FCA1E305DD800A44956 /* GLMediumFile.swift */,
+			);
+			path = GlossModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +552,7 @@
 				E1FA2FB11E3051B100A44956 /* SJLCFCustomer.swift in Sources */,
 				E1D318631E2E91E800096942 /* LargeComplexFile.swift in Sources */,
 				E1FA2FB61E3051B100A44956 /* SJLCFOrderForm.swift in Sources */,
+				E1FA2FCB1E305DD800A44956 /* GLLargeComplexFile.swift in Sources */,
 				E1FA2FB21E3051B100A44956 /* SJLCFData.swift in Sources */,
 				E1D318691E2EA7FE00096942 /* OMLargeSimpleArray.swift in Sources */,
 				E1FA2FB71E3051B100A44956 /* SJLCFPaymentTerms.swift in Sources */,
@@ -543,11 +564,14 @@
 				E1FA2FB41E3051B100A44956 /* SJLCFItems.swift in Sources */,
 				E1FA2FBF1E3051B100A44956 /* SJLSALargeSimpleArray.swift in Sources */,
 				E1D318671E2EA75900096942 /* LargeSimpleArray.swift in Sources */,
+				E1FA2FCC1E305DD800A44956 /* GLLargeSimpleArray.swift in Sources */,
+				E1FA2FCF1E3060DF00A44956 /* GlossTests.swift in Sources */,
 				E1FA2FC21E3051B100A44956 /* SJLSAVolume.swift in Sources */,
 				E1FA2F951E304F2800A44956 /* SwiftyJSONTests.swift in Sources */,
 				E1FA2FBD1E3051B100A44956 /* SJLSAData.swift in Sources */,
 				E1D318761E2EBB5400096942 /* BSMediumFile.swift in Sources */,
 				E1FA2FBB1E3051B100A44956 /* SJLCFSolutions.swift in Sources */,
+				E1FA2FCD1E305DD800A44956 /* GLMediumFile.swift in Sources */,
 				E1FA2FBE1E3051B100A44956 /* SJLSAHigh.swift in Sources */,
 				E1FA2FC51E3051B100A44956 /* SJMFMeta.swift in Sources */,
 				E1D3186B1E2EAEA900096942 /* MediumFile.swift in Sources */,
