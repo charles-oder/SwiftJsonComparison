@@ -9,30 +9,36 @@
 import Foundation
 import ObjectMapper
 
-public class OMMediumFile: MediumFile, Mappable {
-    public var om_metaData: OMMetadata? { didSet { meta = om_metaData } }
-    public var om_data: [OMSimpleData] = [] { didSet { data = om_data } }
+public class OMMediumFile: Mappable {
+    
+    public var meta: OMMetadata?
+    public var data: [OMSimpleData] = []
 
     required public init?(map: Map) {
         
     }
     
     public func mapping(map: Map) {
-        om_metaData     <- map["meta"]
-        om_data         <- map["data"]
+        meta     <- map["meta"]
+        data         <- map["data"]
     }
 
 }
 
-public class OMMetadata: Metadata, Mappable {
-    public var om_symbols: [OMSymbol] = [] { didSet { symbols = om_symbols } }
-    
+public class OMMetadata: Mappable {
+
+    public var command: String?
+    public var symbols: [OMSymbol] = []
+    public var expression: String?
+    public var status: Int?
+    public var requestId: Int?
+
     required public init?(map: Map) {
     }
     
     public func mapping(map: Map) {
         command     <- map["command"]
-        om_symbols  <- map["symbols"]
+        symbols  <- map["symbols"]
         expression  <- map["expression"]
         status      <- map["status"]
         requestId   <- map["requestId"]
@@ -40,7 +46,10 @@ public class OMMetadata: Metadata, Mappable {
     
 }
 
-public class OMSymbol: Symbol, Mappable {
+public class OMSymbol: Mappable {
+
+    public var symbol: String?
+    public var market: String?
 
     required public init?(map: Map) {
         
@@ -48,12 +57,29 @@ public class OMSymbol: Symbol, Mappable {
     
     public func mapping(map: Map) {
         symbol      <- map["symbol"]
-        market        <- map["market"]
+        market      <- map["market"]
     }
     
 }
 
-public class OMSimpleData: SimpleData, Mappable {
+public class OMSimpleData: Mappable {
+    
+    public var Last: String?
+    public var Change: String?
+    public var High: String?
+    public var Low: String?
+    public var Open: String?
+    public var Bid: String?
+    public var Ask: String?
+    public var CumVolume: Int?
+    public var IssueDescription: String?
+    public var Settledate: String?
+    public var SettlementPrice: String?
+    public var ActualSymbol: String?
+    public var QuoteDelay: Int?
+    public var TradeDateTime: String?
+    public var PctChange: String?
+
     required public init?(map: Map) {
         
     }

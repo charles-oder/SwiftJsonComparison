@@ -10,7 +10,7 @@ import Foundation
 
 public class LargeComplexFile {
     
-    public var orders = [Order]()
+    public var data = [Order]()
     public var total: Int = 0
     public var unfilteredTotal: Int = 0
     public var alertMessages: [String]?

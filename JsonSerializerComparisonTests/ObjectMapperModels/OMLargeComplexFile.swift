@@ -10,16 +10,19 @@ import UIKit
 
 import ObjectMapper
 
-public class OMLargeComplexFile: LargeComplexFile, Mappable {
+public class OMLargeComplexFile: Mappable {
     
-    var omOrders: [OMOrder] = [] { didSet { orders = omOrders } }
+    public var data = [OMOrder]()
+    public var total: Int = 0
+    public var unfilteredTotal: Int = 0
+    public var alertMessages: [String]?
     
     public required init?(map: Map) {
         
     }
     
     public func mapping(map: Map) {
-        omOrders            <- map["data"]
+        data                <- map["data"]
         total               <- map["total"]
         unfilteredTotal     <- map["unfilteredTotal"]
         alertMessages       <- map["alertMessage"]
@@ -27,14 +30,28 @@ public class OMLargeComplexFile: LargeComplexFile, Mappable {
     
 }
 
-public class OMOrder: Order, Mappable {
+public class OMOrder: Mappable {
     
-    var om_orderForm: OMOrderForm? { didSet { orderForm = om_orderForm } }
-    var om_items: [OMOrderSolutionLineItem]? { didSet { items = om_items } }
-    var om_customer: OMPerson? { didSet { customer = om_customer } }
-    var om_salesRep: OMPerson? { didSet { salesRep = om_salesRep } }
-    var om_paymentTerm: OMPaymentTerm? { didSet { paymentTerm = om_paymentTerm } }
-    
+    public var id: Int?
+    public var date: String?
+    public var status: String?
+    public var orderForm: OMOrderForm?
+    public var idOrderForm: Int?
+    public var idPaymentTerm: Int?
+    public var idSalesTerritory: Int?
+    public var total: Double?
+    public var items: [OMOrderSolutionLineItem]?
+    public var customer: OMPerson?
+    public var salesRep: OMPerson?
+    public var paymentTerm: OMPaymentTerm?
+    public var note: String?
+    public var startDeliveryDate: String?
+    public var endDeliveryDate: String?
+    public var created: String?
+    public var createdBy: Int?
+    public var modified: String?
+    public var modifiedBy: Int?
+    public var signature: String?
     
     required public init?(map: Map) {
         
@@ -45,15 +62,15 @@ public class OMOrder: Order, Mappable {
         idSalesTerritory        <- map ["idSalesTerritory"]
         date                    <- map ["date"]
         status                  <- map ["status"]
-        om_orderForm            <- map ["orderForm"]
+        orderForm            <- map ["orderForm"]
         idOrderForm             <- map ["idOrderForm"]
         idPaymentTerm           <- map ["idPaymentTerm"]
         total                   <- map ["total"]
-        om_items                <- map ["items"]
-        om_customer             <- map ["customer"]
-        om_salesRep             <- map ["salesRep"]
+        items                <- map ["items"]
+        customer             <- map ["customer"]
+        salesRep             <- map ["salesRep"]
         note                    <- map ["note"]
-        om_paymentTerm          <- map ["paymentTerm"]
+        paymentTerm          <- map ["paymentTerm"]
         startDeliveryDate       <- map ["startDeliveryDate"]
         endDeliveryDate         <- map ["endDeliveryDate"]
         created                 <- map ["created"]
@@ -65,8 +82,15 @@ public class OMOrder: Order, Mappable {
     
 }
 
-public class OMOrderSolutionLineItem: OrderSolutionLineItem, Mappable {
+public class OMOrderSolutionLineItem: Mappable {
     
+    public var idSolution: Int?
+    public var displayName: String?
+    public var subTotal: Double?
+    public var quantity: Double?
+    public var idDiscountProgram: Int?
+    public var price: Double?
+
     required public init?(map: Map) {
         
     }
@@ -84,8 +108,11 @@ public class OMOrderSolutionLineItem: OrderSolutionLineItem, Mappable {
 
 
 
-public class OMPerson: Person, Mappable {
+public class OMPerson: Mappable {
     
+    public var id: Int?
+    public var displayName: String?
+
     required public init?(map: Map) {
         
     }
@@ -98,12 +125,20 @@ public class OMPerson: Person, Mappable {
 
 
 
-public class OMOrderForm: OrderForm, Mappable {
+public class OMOrderForm: Mappable {
     
-    var om_season: OMSeason? { didSet { season = om_season } }
-    var om_salesTerritories: [OMObjectType] = [] { didSet { salesTerritories = om_salesTerritories } }
-    var om_solutions: [OMSolution] = [] { didSet { solutions = om_solutions } }
-    var om_paymentTerms: [OMPaymentTerm] = [] { didSet { paymentTerms = om_paymentTerms } }
+    public var id: Int?
+    public var name: String?
+    public var active: Int?
+    public var season: OMSeason?
+    public var salesTerritories = [OMObjectType]()
+    public var solutions = [OMSolution]()
+    public var paymentTerms = [OMPaymentTerm]()
+    public var templateTerms: String?
+    public var created: String?
+    public var createdBy: Int?
+    public var modified: String?
+    public var modifiedBy: Int?
     
     public required init?(map: Map) {
         
@@ -113,10 +148,10 @@ public class OMOrderForm: OrderForm, Mappable {
         id                      <- map["id"]
         name                    <- map["name"]
         active                  <- map["active"]
-        om_season               <- map["season"]
-        om_salesTerritories     <- map["salesTerritories"]
-        om_solutions            <- map["solutions"]
-        om_paymentTerms         <- map["paymentTerms"]
+        season               <- map["season"]
+        salesTerritories     <- map["salesTerritories"]
+        solutions            <- map["solutions"]
+        paymentTerms         <- map["paymentTerms"]
         templateTerms           <- map["templateTerms"]
         created                 <- map["created"]
         createdBy               <- map["createdBy"]
@@ -126,8 +161,12 @@ public class OMOrderForm: OrderForm, Mappable {
     
 }
 
-public class OMSeason: Season, Mappable {
+public class OMSeason: Mappable {
     
+    public var year: Int?
+    public var name: String?
+    public var id: Int?
+
     required public init?(map: Map) {
         
     }
@@ -140,8 +179,11 @@ public class OMSeason: Season, Mappable {
 
 }
 
-public class OMObjectType: ObjectType, Mappable {
+public class OMObjectType: Mappable {
     
+    public var id: Int?
+    public var name: String?
+
     required public init?(map: Map) {
         
     }
@@ -153,10 +195,14 @@ public class OMObjectType: ObjectType, Mappable {
     
 }
 
-public class OMSolution: Solution, Mappable {
+public class OMSolution: Mappable {
     
-    var om_category: OMObjectType? { didSet { category = om_category } }
-    var om_discountPrograms: [OMDiscountProgram] = [] { didSet { discountPrograms = om_discountPrograms } }
+    public var id: Int?
+    public var displayName: String?
+    public var UOMName: String?
+    public var category: OMObjectType?
+    public var deviations: [String] = []
+    public var discountPrograms = [OMDiscountProgram]()
     
     required public init?(map: Map) {
         
@@ -165,16 +211,22 @@ public class OMSolution: Solution, Mappable {
     public func mapping(map: Map) {
         id                      <- map["id"]
         displayName             <- map["displayName"]
-        UOMName                     <- map["UOMName"]
-        om_category             <- map["category"]
+        UOMName                 <- map["UOMName"]
+        category             <- map["category"]
         deviations              <- map["deviations"]
-        om_discountPrograms     <- map["discountPrograms"]
+        discountPrograms     <- map["discountPrograms"]
     }
     
 }
 
-public class OMDiscountProgram: DiscountProgram, Mappable {
+public class OMDiscountProgram: Mappable {
     
+    public var id: Int?
+    public var name: String?
+    public var active: Int?
+    public var operation: String?
+    public var programDescription: String?
+
     public required init?(map: Map) {
         
     }
@@ -189,8 +241,14 @@ public class OMDiscountProgram: DiscountProgram, Mappable {
     
 }
 
-public class OMPaymentTerm: PaymentTerm, Mappable {
+public class OMPaymentTerm: Mappable {
     
+    public var id: Int?
+    public var name: String?
+    public var paymentTermDescription: String?
+    public var active: Int?
+    public var operation: String?
+
     required public init?(map: Map) {
         
     }

@@ -11,7 +11,7 @@ import ObjectMapper
 
 class BaseTests: XCTestCase {
     
-    let iterations = 10
+    static let iterations = 10
     
     func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
         return BaseSerializer().deserializeLargeComplexObject(jsonString: jsonString)
@@ -44,7 +44,7 @@ class BaseTests: XCTestCase {
         var jsonOutput: String?
         
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 jsonOutput = self.serializeLargeComplexObject(testObject!)
             }
         }
@@ -58,21 +58,21 @@ class BaseTests: XCTestCase {
         
         var testObject: LargeComplexFile!
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
             }
         }
         
         
-        XCTAssertEqual(4, testObject?.orders.count)
+        XCTAssertEqual(4, testObject?.data.count)
         XCTAssertEqual(4, testObject?.total)
         XCTAssertEqual(4, testObject?.unfilteredTotal)
         
-        guard let _  = testObject?.orders.first else {
+        guard let _  = testObject?.data.first else {
             XCTFail("Not enough orders")
             return
         }
-        let order_1 = testObject?.orders.removeFirst()
+        let order_1 = testObject?.data.removeFirst()
         XCTAssertEqual(3, order_1?.id)
         XCTAssertEqual("2016-04-26", order_1?.date)
         XCTAssertEqual("pending", order_1?.status)
@@ -140,7 +140,7 @@ class BaseTests: XCTestCase {
         var jsonOutput: String?
         
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 jsonOutput = self.serializeLargeSimpleArray(testObject!)
             }
         }
@@ -154,7 +154,7 @@ class BaseTests: XCTestCase {
         
         var testObject: LargeSimpleArray!
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
             }
         }
@@ -182,7 +182,7 @@ class BaseTests: XCTestCase {
         var jsonOutput: String?
         
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 jsonOutput = self.serializeMediumFile(testObject!)
             }
         }
@@ -196,7 +196,7 @@ class BaseTests: XCTestCase {
         
         var testObject: MediumFile!
         self.measure {
-            for _ in 1...self.iterations {
+            for _ in 1...BaseTests.iterations {
                 testObject = self.deserializeMediumFile(jsonString: jsonString)
             }
         }

@@ -14,7 +14,7 @@ public extension LargeComplexFile {
         if let orderDictArray = dict["data"] as? [[String:Any?]] {
             for item in orderDictArray {
                 if let order = Order(dict: item) {
-                    orders.append(order)
+                    data.append(order)
                 }
             }
         }
@@ -29,7 +29,7 @@ public extension LargeComplexFile {
     public var dict: [String: Any?] {
         var output: [String: Any?] = [:]
         var orderDictArray: [[String:Any?]] = []
-        for order in orders {
+        for order in data {
             orderDictArray.append(order.dict)
         }
         output["data"] = orderDictArray

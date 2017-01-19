@@ -9,27 +9,28 @@
 import Foundation
 import ObjectMapper
 
-public class OMLargeSimpleArray: LargeSimpleArray, Mappable {
+public class OMLargeSimpleArray: Mappable {
     
-    public var om_data = [OMQuoteEntry]() { didSet { data = om_data } }
+    public var data = [OMQuoteEntry]()
     
     required public init?(map: Map) {
         
     }
     
     public func mapping(map: Map) {
-        om_data    <- map["data"]
+        data    <- map["data"]
     }
     
 }
 
-public class OMQuoteEntry: QuoteEntry, Mappable {
+public class OMQuoteEntry: Mappable {
 
-    public var om_open: OMQuoteValue? { didSet { Open = om_open } }
-    public var om_high: OMQuoteValue? { didSet { High = om_high } }
-    public var om_low: OMQuoteValue? { didSet { Low = om_low } }
-    public var om_close: OMQuoteValue? { didSet { Close = om_close } }
-    public var om_volume: OMQuoteValue? { didSet { Volume = om_volume } }
+    public var DateTime: String?
+    public var Open: OMQuoteValue?
+    public var High: OMQuoteValue?
+    public var Low: OMQuoteValue?
+    public var Close: OMQuoteValue?
+    public var Volume: OMQuoteValue?
     
     required public init?(map: Map) {
         
@@ -37,16 +38,19 @@ public class OMQuoteEntry: QuoteEntry, Mappable {
     
     public func mapping(map: Map) {
         DateTime    <- map["DateTime"]
-        om_open     <- map["Open"]
-        om_high     <- map["High"]
-        om_low     <- map["Low"]
-        om_close     <- map["Close"]
-        om_volume     <- map["Volume"]
+        Open     <- map["Open"]
+        High     <- map["High"]
+        Low     <- map["Low"]
+        Close     <- map["Close"]
+        Volume     <- map["Volume"]
     }
     
 }
 
-public class OMQuoteValue: QuoteValue, Mappable {
+public class OMQuoteValue: Mappable {
+
+    public var number: Double?
+    public var text: String?
 
     required public init?(map: Map) {
         
