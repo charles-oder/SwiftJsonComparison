@@ -13,28 +13,28 @@ class BaseTests: XCTestCase {
     
     static let iterations = 10
     
-    func deserializeLargeComplexObject(jsonString: String) -> LargeComplexFile? {
-        return BaseSerializer().deserializeLargeComplexObject(jsonString: jsonString)
+    func deserializeLargeComplexObject(jsonString: String) -> BSLCBaseModel? {
+        return BSLCBaseModel(json: jsonString)
     }
     
-    func serializeLargeComplexObject(_ object: LargeComplexFile) -> String? {
-        return BaseSerializer().serializeLargeComplexObject(object)
+    func serializeLargeComplexObject(_ object: BSLCBaseModel) -> String? {
+        return object.jsonString
     }
     
-    func deserializeLargeSimpleArray(jsonString: String) -> LargeSimpleArray? {
-        return BaseSerializer().deserializeLargeSimpleArray(jsonString: jsonString)
+    func deserializeLargeSimpleArray(jsonString: String) -> BSLSABaseModel? {
+        return BSLSABaseModel(json: jsonString)
     }
     
-    func serializeLargeSimpleArray(_ object: LargeSimpleArray) -> String? {
-        return BaseSerializer().serializeLargeSimpleArray(object)
+    func serializeLargeSimpleArray(_ object: BSLSABaseModel) -> String? {
+        return object.jsonString
     }
     
-    func deserializeMediumFile(jsonString: String) -> MediumFile? {
-        return BaseSerializer().deserializeMediumFile(jsonString: jsonString)
+    func deserializeMediumFile(jsonString: String) -> BSMBaseModel? {
+        return BSMBaseModel(json: jsonString)
     }
     
-    func serializeMediumFile(_ object: MediumFile) -> String? {
-        return BaseSerializer().serializeMediumFile(object)
+    func serializeMediumFile(_ object: BSMBaseModel) -> String? {
+        return object.jsonString
     }
     
     func testSerializeLargeComplexObject1000Times() {
@@ -56,7 +56,7 @@ class BaseTests: XCTestCase {
     func testDeserializeLargeComplexObject1000Times() {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
         
-        var testObject: LargeComplexFile!
+        var testObject: BSLCBaseModel!
         self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
                 testObject = self?.deserializeLargeComplexObject(jsonString: jsonString)
@@ -64,15 +64,16 @@ class BaseTests: XCTestCase {
         }
         
         
-        XCTAssertEqual(4, testObject?.data.count)
+        XCTAssertEqual(4, testObject?.data?.count)
         XCTAssertEqual(4, testObject?.total)
         XCTAssertEqual(4, testObject?.unfilteredTotal)
         
-        guard let _  = testObject?.data.first else {
+        guard let _  = testObject?.data?.first else {
             XCTFail("Not enough orders")
             return
         }
-        let order_1 = testObject?.data.removeFirst()
+        
+        let order_1 = testObject?.data?.first
         XCTAssertEqual(3, order_1?.id)
         XCTAssertEqual("2016-04-26", order_1?.date)
         XCTAssertEqual("pending", order_1?.status)
@@ -82,28 +83,28 @@ class BaseTests: XCTestCase {
         XCTAssertEqual(1, order_1?.orderForm?.season?.id)
         XCTAssertEqual("Spring 2016", order_1?.orderForm?.season?.name)
         XCTAssertEqual(2016, order_1?.orderForm?.season?.year)
-        XCTAssertEqual(1, order_1?.orderForm?.salesTerritories.count)
-        XCTAssertEqual(1, order_1?.orderForm?.salesTerritories.first?.id)
-        XCTAssertEqual("North Territory", order_1?.orderForm?.salesTerritories.first?.name)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.count)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.first?.id)
-        XCTAssertEqual("DK-01", order_1?.orderForm?.solutions.first?.displayName)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.first?.deviations.count)
-        XCTAssertEqual("+-1%", order_1?.orderForm?.solutions.first?.deviations.first)
-        XCTAssertEqual(2, order_1?.orderForm?.solutions.first?.category?.id)
-        XCTAssertEqual("Nutrient Management", order_1?.orderForm?.solutions.first?.category?.name)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.first?.discountPrograms.count)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.first?.discountPrograms.first?.id)
-        XCTAssertEqual("Volume Volume Volume", order_1?.orderForm?.solutions.first?.discountPrograms.first?.name)
-        XCTAssertEqual("5% of more than 50 bags", order_1?.orderForm?.solutions.first?.discountPrograms.first?.programDescription)
-        XCTAssertEqual(1, order_1?.orderForm?.solutions.first?.discountPrograms.first?.active)
-        XCTAssertEqual("%-5.00volume(50)", order_1?.orderForm?.solutions.first?.discountPrograms.first?.operation)
-        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms.count)
-        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms.first?.id)
-        XCTAssertEqual("Prepay discount", order_1?.orderForm?.paymentTerms.first?.name)
-        XCTAssertEqual("3% off", order_1?.orderForm?.paymentTerms.first?.paymentTermDescription)
-        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms.first?.active)
-        XCTAssertEqual("%-3.00", order_1?.orderForm?.paymentTerms.first?.operation)
+        XCTAssertEqual(1, order_1?.orderForm?.salesTerritories?.count)
+        XCTAssertEqual(1, order_1?.orderForm?.salesTerritories?.first?.id)
+        XCTAssertEqual("North Territory", order_1?.orderForm?.salesTerritories?.first?.name)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.count)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.first?.id)
+        XCTAssertEqual("DK-01", order_1?.orderForm?.solutions?.first?.displayName)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.first?.deviations?.count)
+        XCTAssertEqual("+-1%", order_1?.orderForm?.solutions?.first?.deviations?.first)
+        XCTAssertEqual(2, order_1?.orderForm?.solutions?.first?.category?.id)
+        XCTAssertEqual("Nutrient Management", order_1?.orderForm?.solutions?.first?.category?.name)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.first?.discountPrograms?.count)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.first?.discountPrograms?.first?.id)
+        XCTAssertEqual("Volume Volume Volume", order_1?.orderForm?.solutions?.first?.discountPrograms?.first?.name)
+        XCTAssertEqual("5% of more than 50 bags", order_1?.orderForm?.solutions?.first?.discountPrograms?.first?.description)
+        XCTAssertEqual(1, order_1?.orderForm?.solutions?.first?.discountPrograms?.first?.active)
+        XCTAssertEqual("%-5.00volume(50)", order_1?.orderForm?.solutions?.first?.discountPrograms?.first?.operation)
+        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms?.count)
+        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms?.first?.id)
+        XCTAssertEqual("Prepay discount", order_1?.orderForm?.paymentTerms?.first?.name)
+        XCTAssertEqual("3% off", order_1?.orderForm?.paymentTerms?.first?.description)
+        XCTAssertEqual(1, order_1?.orderForm?.paymentTerms?.first?.active)
+        XCTAssertEqual("%-3.00", order_1?.orderForm?.paymentTerms?.first?.operation)
         XCTAssertEqual("small print goes here", order_1?.orderForm?.templateTerms)
         XCTAssertEqual("2016-04-26", order_1?.orderForm?.created)
         XCTAssertEqual(1, order_1?.orderForm?.createdBy)
@@ -152,25 +153,25 @@ class BaseTests: XCTestCase {
     func testDeserializeLargeSimpleArray1000Times() {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
         
-        var testObject: LargeSimpleArray!
+        var testObject: BSLSABaseModel!
         self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
                 testObject = self?.deserializeLargeSimpleArray(jsonString: jsonString)
             }
         }
         
-        XCTAssertEqual(100, testObject.data.count)
-        XCTAssertEqual("2016-09-01T15:02:14.978", testObject.data.first?.DateTime)
-        XCTAssertEqual(105.78500000000001, testObject.data.first?.Open?.number)
-        XCTAssertEqual("105.7850", testObject.data.first?.Open?.text)
-        XCTAssertEqual(105.81, testObject.data.first?.High?.number)
-        XCTAssertEqual("105.8100", testObject.data.first?.High?.text)
-        XCTAssertEqual(105.78500000000001, testObject.data.first?.Low?.number)
-        XCTAssertEqual("105.7850", testObject.data.first?.Low?.text)
-        XCTAssertEqual(105.805, testObject.data.first?.Close?.number)
-        XCTAssertEqual("105.8050", testObject.data.first?.Close?.text)
-        XCTAssertEqual(4511.0, testObject.data.first?.Volume?.number)
-        XCTAssertEqual("4511", testObject.data.first?.Volume?.text)
+        XCTAssertEqual(100, testObject.data?.count)
+        XCTAssertEqual("2016-09-01T15:02:14.978", testObject.data?.first?.DateTime)
+        XCTAssertEqual(105.78500000000001, testObject.data?.first?.Open?.number)
+        XCTAssertEqual("105.7850", testObject.data?.first?.Open?.text)
+        XCTAssertEqual(105.81, testObject.data?.first?.High?.number)
+        XCTAssertEqual("105.8100", testObject.data?.first?.High?.text)
+        XCTAssertEqual(105.78500000000001, testObject.data?.first?.Low?.number)
+        XCTAssertEqual("105.7850", testObject.data?.first?.Low?.text)
+        XCTAssertEqual(105.805, testObject.data?.first?.Close?.number)
+        XCTAssertEqual("105.8050", testObject.data?.first?.Close?.text)
+        XCTAssertEqual(4511, testObject.data?.first?.Volume?.number)
+        XCTAssertEqual("4511", testObject.data?.first?.Volume?.text)
         
         
     }
@@ -194,7 +195,7 @@ class BaseTests: XCTestCase {
     func testDeserializeMediumFile1000Times() {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
         
-        var testObject: MediumFile!
+        var testObject: BSMBaseModel!
         self.measure { [weak self] in
             for _ in 1...BaseTests.iterations {
                 testObject = self?.deserializeMediumFile(jsonString: jsonString)
@@ -202,26 +203,26 @@ class BaseTests: XCTestCase {
         }
         
         XCTAssertEqual("QuoteWatch", testObject.meta?.command)
-        XCTAssertEqual("@C@1", testObject.meta?.symbols.first?.symbol)
-        XCTAssertEqual("CBT", testObject.meta?.symbols.first?.market)
+        XCTAssertEqual("@C@1", testObject.meta?.symbols?.first?.symbol)
+        XCTAssertEqual("CBT", testObject.meta?.symbols?.first?.market)
         XCTAssertEqual("@c@1", testObject.meta?.expression)
         XCTAssertEqual(200, testObject.meta?.status)
         XCTAssertEqual(2, testObject.meta?.requestId)
-        XCTAssertEqual("108.9863", testObject.data.first?.Last)
-        XCTAssertEqual("0.4763", testObject.data.first?.Change)
-        XCTAssertEqual("110.0000", testObject.data.first?.High)
-        XCTAssertEqual("100.0000", testObject.data.first?.Low)
-        XCTAssertEqual("770.1000", testObject.data.first?.Open)
-        XCTAssertEqual("762.5100", testObject.data.first?.Bid)
-        XCTAssertEqual("762.8300", testObject.data.first?.Ask)
-        XCTAssertEqual(1270264, testObject.data.first?.CumVolume)
-        XCTAssertEqual("ALPHABET INC CLASS C", testObject.data.first?.IssueDescription)
-        XCTAssertEqual("2016-10-03", testObject.data.first?.Settledate)
-        XCTAssertEqual("1.2875", testObject.data.first?.SettlementPrice)
-        XCTAssertEqual("@CZ16", testObject.data.first?.ActualSymbol)
-        XCTAssertEqual(10, testObject.data.first?.QuoteDelay)
-        XCTAssertEqual("2016-09-09T18:54:35.917", testObject.data.first?.TradeDateTime)
-        XCTAssertEqual("0.32", testObject.data.first?.PctChange)
+        XCTAssertEqual("108.9863", testObject.data?.first?.Last)
+        XCTAssertEqual("0.4763", testObject.data?.first?.Change)
+        XCTAssertEqual("110.0000", testObject.data?.first?.High)
+        XCTAssertEqual("100.0000", testObject.data?.first?.Low)
+        XCTAssertEqual("770.1000", testObject.data?.first?.Open)
+        XCTAssertEqual("762.5100", testObject.data?.first?.Bid)
+        XCTAssertEqual("762.8300", testObject.data?.first?.Ask)
+        XCTAssertEqual(1270264, testObject.data?.first?.CumVolume)
+        XCTAssertEqual("ALPHABET INC CLASS C", testObject.data?.first?.IssueDescription)
+        XCTAssertEqual("2016-10-03", testObject.data?.first?.Settledate)
+        XCTAssertEqual("1.2875", testObject.data?.first?.SettlementPrice)
+        XCTAssertEqual("@CZ16", testObject.data?.first?.ActualSymbol)
+        XCTAssertEqual(10, testObject.data?.first?.QuoteDelay)
+        XCTAssertEqual("2016-09-09T18:54:35.917", testObject.data?.first?.TradeDateTime)
+        XCTAssertEqual("0.32", testObject.data?.first?.PctChange)
         
         
     }

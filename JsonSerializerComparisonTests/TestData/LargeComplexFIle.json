@@ -155,7 +155,7 @@
                        }
                        ],
              "customer": {
-             "id": "{{customerId}}",
+             "id": 1,
              "displayName": "George Sanders"
              },
              "salesRep": {
@@ -240,7 +240,7 @@
                        }
                        ],
              "customer": {
-             "id": "{{customerId}}",
+             "id": 1,
              "displayName": "George Sanders"
              },
              "salesRep": {
@@ -325,7 +325,7 @@
                        }
                        ],
              "customer": {
-             "id": "{{customerId}}",
+             "id": 1,
              "displayName": "George Sanders"
              },
              "salesRep": {
