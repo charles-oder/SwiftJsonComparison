@@ -44,7 +44,13 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func shareButtonTapped(_ sender: Any) {
+    @IBAction func shareButtonTapped(_ sender: UIButton) {
+        let activityController = UIActivityViewController(activityItems: [textView.text], applicationActivities: nil)
+        let popover = activityController.popoverPresentationController
+        popover?.sourceView = sender
+        popover?.sourceRect = sender.bounds
+        present(activityController, animated: true, completion: nil)
+
     }
 
     func runTests() {
