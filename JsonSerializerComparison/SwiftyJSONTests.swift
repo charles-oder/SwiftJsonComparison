@@ -10,6 +10,10 @@ import SwiftyJSON
 
 class SwiftyJSONTests: TestCase<SJMFMediumFile, SJLCFLargeComplexFile, SJLSALargeSimpleArray> {
     
+    override var testName: String {
+        return "SwiftyJSON"
+    }
+    
     override func deserializeLargeComplexObject(jsonString: String) -> SJLCFLargeComplexFile? {
         if let dataFromString = jsonString.data(using: .utf8, allowLossyConversion: false) {
             let json = JSON(data: dataFromString)
