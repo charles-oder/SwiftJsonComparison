@@ -749,8 +749,7 @@
 				TargetAttributes = {
 					E1D318311E2E897A00096942 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = LBQJS63JZK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					E1D3184A1E2E8A2700096942 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1166,13 +1165,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LBQJS63JZK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JsonSerializerComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telventdtn.Chembook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JsonTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "38aaed56-112c-4e89-8530-b7db47a382bd";
-				PROVISIONING_PROFILE_SPECIFIER = "Chembook Dev";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1182,14 +1181,14 @@
 			baseConfigurationReference = BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = LBQJS63JZK;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JsonSerializerComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telventdtn.Chembook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JsonTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37b3bfb1-82f6-4cda-9faa-cf0644172cd5";
-				PROVISIONING_PROFILE_SPECIFIER = Chembook;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
