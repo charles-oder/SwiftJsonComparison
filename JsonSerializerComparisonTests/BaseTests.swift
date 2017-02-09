@@ -224,9 +224,14 @@ class BaseTests: XCTestCase {
         XCTAssertEqual("2016-09-09T18:54:35.917", testObject.data?.first?.TradeDateTime)
         XCTAssertEqual("0.32", testObject.data?.first?.PctChange)
         
-        
     }
     
-    
+    func write(body: String, toFile: String, inDirectory fileLocation: String) throws {
+        let folderUrl = URL(fileURLWithPath: fileLocation, isDirectory: true)
+        let url = URL(fileURLWithPath: fileLocation + toFile)
+        try FileManager.default.createDirectory(at: folderUrl, withIntermediateDirectories: true, attributes: nil)
+        try body.data(using: .utf8, allowLossyConversion: true)?.write(to: url)
+    }
+
     
 }
