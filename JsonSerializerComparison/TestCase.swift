@@ -45,26 +45,11 @@ public class TestCase<MF, LCO, LSA>: JsonTest {
         return nil
     }
     
-    var testName: String {
+    public var testName: String {
         return "TestCase"
     }
-
-}
-
-extension TestCase {
     
-    func measureBlock(operation:()->()) -> [Double] {
-        var output = [Double]()
-        for _ in 1...iterations {
-            let startTime = CFAbsoluteTimeGetCurrent()
-            operation()
-            let stopTime = CFAbsoluteTimeGetCurrent()
-            output.append(stopTime - startTime)
-        }
-        return output
-    }
-    
-    func runTests(dataReceived: (String) -> Void) -> [String: TestResult] {
+    public func runTests(dataReceived: (String) -> Void) -> [String: TestResult] {
         var results = [String: TestResult]()
         let serializeLargeComplexObject = TestResult(values: testSerializeLargeComplexObject())
         results[TestResult.serializeLargeComplexObject] = serializeLargeComplexObject
@@ -91,6 +76,23 @@ extension TestCase {
         dataReceived(buildLine(title: "\(testName)-DeserializeLargeSimpleArray", results: deserializeLargeSimpleArray))
         
         return results
+    }
+
+}
+
+extension TestCase {
+    
+    func measureBlock(operation:()->()) -> [Double] {
+        var output = [Double]()
+        for _ in 1...iterations {
+            autoreleasepool {
+                let startTime = CFAbsoluteTimeGetCurrent()
+                operation()
+                let stopTime = CFAbsoluteTimeGetCurrent()
+                output.append(stopTime - startTime)
+            }
+        }
+        return output
     }
     
     func buildLine(title: String, results: TestResult) -> String {
