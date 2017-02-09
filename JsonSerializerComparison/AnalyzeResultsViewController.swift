@@ -90,9 +90,21 @@ class AnalyzeResutlsViewController: UIViewController, UITableViewDataSource {
         cell.timeLabel.backgroundColor = getMainColor(max: minMaxes[key]?.max, min:minMaxes[key]?.min, value: testResult?.mean)
         
         let difference = (testResult?.mean ?? 0) - (minMaxes[key]?.min ?? 0)
-        cell.timeDifferenceLabel.text = String(format: "+%.6f", difference)
+        cell.timeDifferenceLabel.text = getPercentage(difference: difference, min: minMaxes[key]?.min)
         cell.timeDifferenceLabel.backgroundColor = getDifferenceColor(max: minMaxes[key]?.max, min:minMaxes[key]?.min, value: testResult?.mean)
         return cell
+    }
+    
+    func getPercentage(difference: Double?, min: Double?) -> String {
+        guard let diff = difference, diff > 0 else {
+            return "--"
+        }
+        guard let minValue = min, minValue > 0 else {
+            return "--"
+        }
+        
+        let percentage = diff / minValue
+        return String(format: "+%.2f", percentage * 100.0) + "%"
     }
     
     func getMainColor(max: Double?, min: Double?, value: Double?) -> UIColor {
