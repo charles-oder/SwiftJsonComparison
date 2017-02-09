@@ -64,24 +64,17 @@ class ViewController: UIViewController {
         appendText("Test, Average, High, Low, StandardDev\n")
         appendText("\n")
         results = [:]
-        let baseTests = BaseTests(iterations: iterations)
-        results[baseTests.testName] = baseTests.runTests(dataReceived: { testResult in
-            appendText(testResult)
-            
-        })
+        runTest(BaseTests(iterations: iterations))
         appendText("\n")
-        let glossTests = GlossTests(iterations: iterations)
-        results[glossTests.testName] = glossTests.runTests(dataReceived: { testResult in
-            appendText(testResult)
-        })
+        runTest(GlossTests(iterations: iterations))
         appendText("\n")
-        let objectMapperTests = ObjectMapperTests(iterations: iterations)
-        results[objectMapperTests.testName] = objectMapperTests.runTests(dataReceived: { testResult in
-            appendText(testResult)
-        })
+        runTest(ObjectMapperTests(iterations: iterations))
         appendText("\n")
-        let swiftyJsonTests = SwiftyJSONTests(iterations: iterations)
-        results[swiftyJsonTests.testName] = swiftyJsonTests.runTests(dataReceived: { testResult in
+        runTest(SwiftyJSONTests(iterations: iterations))
+    }
+    
+    func runTest(_ test: JsonTest) {
+        results[test.testName] = test.runTests(dataReceived: { testResult in
             appendText(testResult)
         })
     }

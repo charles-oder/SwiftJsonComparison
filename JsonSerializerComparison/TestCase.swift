@@ -8,7 +8,12 @@
 
 import Foundation
 
-public class TestCase<MF, LCO, LSA> {
+public protocol JsonTest {
+    func runTests(dataReceived: (String) -> Void) -> [String: TestResult]
+    var testName: String { get }
+}
+
+public class TestCase<MF, LCO, LSA>: JsonTest {
     
     let iterations: Int
     
