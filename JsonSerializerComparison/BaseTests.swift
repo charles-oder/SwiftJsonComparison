@@ -41,6 +41,10 @@ class BaseTests: TestCase {
         
         let testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
         
+        if let error = assertLargeComplexObject(json: serializeLargeComplexObject(testObject!)) {
+            print(error)
+            return []
+        }
         
         return measureBlock { [weak self] in
             
@@ -55,7 +59,10 @@ class BaseTests: TestCase {
         
         let testObject = deserializeLargeComplexObject(jsonString: jsonString)
 
-        assertLargeComplexObject(json: serializeLargeComplexObject(testObject!))
+        if let error = assertLargeComplexObject(json: serializeLargeComplexObject(testObject!)) {
+            print(error)
+            return []
+        }
         
         return measureBlock { [weak self] in
             _ = self?.deserializeLargeComplexObject(jsonString: jsonString)
@@ -71,7 +78,10 @@ class BaseTests: TestCase {
         
         let jsonOutput = serializeLargeSimpleArray(testObject!)
         
-        assertLargeSimpleArray(json: jsonOutput!)
+        if let error = assertLargeSimpleArray(json: jsonOutput!) {
+            print(error)
+            return []
+        }
         
         return measureBlock { [weak self] in
             _ = self?.serializeLargeSimpleArray(testObject!)
@@ -84,7 +94,10 @@ class BaseTests: TestCase {
         
         let testObject = deserializeLargeSimpleArray(jsonString: jsonString)
         
-        assertLargeSimpleArray(json: serializeLargeSimpleArray(testObject!))
+        if let error = assertLargeSimpleArray(json: serializeLargeSimpleArray(testObject!)) {
+            print(error)
+           return []
+        }
         
         return measureBlock { [weak self] in
             _ = self?.deserializeLargeSimpleArray(jsonString: jsonString)
@@ -98,7 +111,10 @@ class BaseTests: TestCase {
         let testObject = self.deserializeMediumFile(jsonString: jsonString)
         let jsonOutput = serializeMediumFile(testObject!)
         
-        assertMediumFile(json: jsonOutput)
+        if let error = assertMediumFile(json: jsonOutput) {
+            print(error)
+            return []
+        }
 
         return measureBlock { [weak self] in
             _ = self?.serializeMediumFile(testObject!)
@@ -112,7 +128,10 @@ class BaseTests: TestCase {
         
         let testObject = deserializeMediumFile(jsonString: jsonString)!
         
-        assertMediumFile(json: serializeMediumFile(testObject))
+        if let error = assertMediumFile(json: serializeMediumFile(testObject)) {
+            print(error)
+            return []
+        }
         
         
         return measureBlock { [weak self] in
