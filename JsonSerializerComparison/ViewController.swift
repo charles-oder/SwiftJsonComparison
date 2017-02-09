@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var analyzeButton: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var iterationsTextField: UITextField!
     @IBOutlet weak var overlay: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    var results = [String: [String: TestResult]]()
     
     var iterations: Int {
         return Int(iterationsTextField.text ?? "10") ?? 10
@@ -30,6 +32,9 @@ class ViewController: UIViewController {
         DispatchQueue(label: "running-tests").async { [weak self] in
             self?.runTests()
             self?.showOverlay(show: false)
+            DispatchQueue.main.async { [weak self] in
+                self?.analyzeButton.isHidden = false
+            }
         }
     }
     
@@ -58,19 +63,25 @@ class ViewController: UIViewController {
         appendText("Running \(iterations) iterations of each test...\n\n")
         appendText("Test, Average, High, Low, StandardDev\n")
         appendText("\n")
-        BaseTests(iterations: iterations).runTests(dataReceived: { testResult in
+        results = [:]
+        let baseTests = BaseTests(iterations: iterations)
+        results[baseTests.testName] = baseTests.runTests(dataReceived: { testResult in
+            appendText(testResult)
+            
+        })
+        appendText("\n")
+        let glossTests = GlossTests(iterations: iterations)
+        results[glossTests.testName] = glossTests.runTests(dataReceived: { testResult in
             appendText(testResult)
         })
         appendText("\n")
-        GlossTests(iterations: iterations).runTests(dataReceived: { testResult in
+        let objectMapperTests = ObjectMapperTests(iterations: iterations)
+        results[objectMapperTests.testName] = objectMapperTests.runTests(dataReceived: { testResult in
             appendText(testResult)
         })
         appendText("\n")
-        ObjectMapperTests(iterations: iterations).runTests(dataReceived: { testResult in
-            appendText(testResult)
-        })
-        appendText("\n")
-        SwiftyJSONTests(iterations: iterations).runTests(dataReceived: { testResult in
+        let swiftyJsonTests = SwiftyJSONTests(iterations: iterations)
+        results[swiftyJsonTests.testName] = swiftyJsonTests.runTests(dataReceived: { testResult in
             appendText(testResult)
         })
     }
@@ -85,6 +96,12 @@ class ViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let view = self?.textView else { return }
             view.text = view.text + text
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let analyzeViewController = segue.destination as? AnalyzeResutlsViewController {
+            analyzeViewController.results = results
         }
     }
     

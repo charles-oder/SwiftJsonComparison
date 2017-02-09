@@ -13,6 +13,28 @@ public struct TestResult {
 }
 
 public extension TestResult {
+
+    static var serializeLargeComplexObject: String {
+        return "SerializeLargeComplexObject"
+    }
+    static var deserializeLargeComplexObject: String {
+        return "DeserializeLargeComplexObject"
+    }
+    static var serializeMediumFile: String {
+        return "SerializeMediumFile"
+    }
+    static var deserializeMediumFile: String {
+        return "DeserializeMediumFile"
+    }
+    static var serializeLargeSimpleArray: String {
+        return "SerializeLargeSimpleArray"
+    }
+    static var deserializeLargeSimpleArray: String {
+        return "DeserializeLargeSimpleArray"
+    }
+}
+
+public extension TestResult {
     var max: Double? {
         return values.max()
     }

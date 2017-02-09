@@ -59,13 +59,33 @@ extension TestCase {
         return output
     }
     
-    func runTests(dataReceived: (String) -> Void) {
-        dataReceived(buildLine(title: "\(testName)-SerializeLargeComplexObject", results: TestResult(values: testSerializeLargeComplexObject())))
-        dataReceived(buildLine(title: "\(testName)-DeserializeLargeComplexObject", results: TestResult(values: testDeserializeLargeComplexObject())))
-        dataReceived(buildLine(title: "\(testName)-SerializeMediumFile", results: TestResult(values: testSerializeMediumFile())))
-        dataReceived(buildLine(title: "\(testName)-DeserializeMediumFile", results: TestResult(values: testDeserializeMediumFile())))
-        dataReceived(buildLine(title: "\(testName)-SerializeLargeSimpleArray", results: TestResult(values: testSerializeLargeSimpleArray())))
-        dataReceived(buildLine(title: "\(testName)-DeserializeLargeSimpleArray", results: TestResult(values: testDeserializeLargeSimpleArray())))
+    func runTests(dataReceived: (String) -> Void) -> [String: TestResult] {
+        var results = [String: TestResult]()
+        let serializeLargeComplexObject = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.serializeLargeComplexObject] = serializeLargeComplexObject
+        dataReceived(buildLine(title: "\(testName)-SerializeLargeComplexObject", results: serializeLargeComplexObject))
+        
+        let deserializeLargeComplexObject = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.deserializeLargeComplexObject] = deserializeLargeComplexObject
+        dataReceived(buildLine(title: "\(testName)-DeserializeLargeComplexObject", results: deserializeLargeComplexObject))
+        
+        let serializeMediumFile = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.serializeMediumFile] = serializeMediumFile
+        dataReceived(buildLine(title: "\(testName)-SerializeMediumFile", results: serializeMediumFile))
+        
+        let deserializeMediumFile = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.deserializeMediumFile] = deserializeMediumFile
+        dataReceived(buildLine(title: "\(testName)-DeserializeMediumFile", results: deserializeMediumFile))
+        
+        let serializeLargeSimpleArray = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.serializeLargeSimpleArray] = serializeLargeSimpleArray
+        dataReceived(buildLine(title: "\(testName)-SerializeLargeSimpleArray", results: serializeLargeSimpleArray))
+        
+        let deserializeLargeSimpleArray = TestResult(values: testSerializeLargeComplexObject())
+        results[TestResult.deserializeLargeSimpleArray] = deserializeLargeSimpleArray
+        dataReceived(buildLine(title: "\(testName)-DeserializeLargeSimpleArray", results: deserializeLargeSimpleArray))
+        
+        return results
     }
     
     func buildLine(title: String, results: TestResult) -> String {

@@ -95,6 +95,7 @@
 		E19B072E1E4CC1E3007709FB /* SwiftyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B072A1E4CC1E3007709FB /* SwiftyJSONTests.swift */; };
 		E19B07321E4CC21A007709FB /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B07311E4CC21A007709FB /* TestCase.swift */; };
 		E19B07341E4CC339007709FB /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B07331E4CC339007709FB /* TestResult.swift */; };
+		E19B07361E4D08CA007709FB /* AnalyzeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B07351E4D08CA007709FB /* AnalyzeResultsViewController.swift */; };
 		E1D318361E2E897A00096942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318351E2E897A00096942 /* AppDelegate.swift */; };
 		E1D318381E2E897A00096942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D318371E2E897A00096942 /* ViewController.swift */; };
 		E1D3183B1E2E897A00096942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D318391E2E897A00096942 /* Main.storyboard */; };
@@ -247,6 +248,7 @@
 		E19B072A1E4CC1E3007709FB /* SwiftyJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONTests.swift; sourceTree = "<group>"; };
 		E19B07311E4CC21A007709FB /* TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		E19B07331E4CC339007709FB /* TestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		E19B07351E4D08CA007709FB /* AnalyzeResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeResultsViewController.swift; sourceTree = "<group>"; };
 		E1D318321E2E897A00096942 /* JsonSerializerComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonSerializerComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D318351E2E897A00096942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D318371E2E897A00096942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 				E1D3183E1E2E897A00096942 /* LaunchScreen.storyboard */,
 				E1D318411E2E897A00096942 /* Info.plist */,
 				E19B07331E4CC339007709FB /* TestResult.swift */,
+				E19B07351E4D08CA007709FB /* AnalyzeResultsViewController.swift */,
 			);
 			path = JsonSerializerComparison;
 			sourceTree = "<group>";
@@ -747,7 +750,7 @@
 					E1D318311E2E897A00096942 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LBQJS63JZK;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E1D3184A1E2E8A2700096942 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -952,6 +955,7 @@
 				E19B06B21E4CC16E007709FB /* JsonLoader.swift in Sources */,
 				E19B07021E4CC199007709FB /* BSLSAHighModel.swift in Sources */,
 				E19B07151E4CC199007709FB /* SJLCFLargeComplexFile.swift in Sources */,
+				E19B07361E4D08CA007709FB /* AnalyzeResultsViewController.swift in Sources */,
 				E1D318361E2E897A00096942 /* AppDelegate.swift in Sources */,
 				E19B07001E4CC199007709FB /* BSLSACloseModel.swift in Sources */,
 				E19B06FB1E4CC199007709FB /* BSLCSalesrepModel.swift in Sources */,
@@ -1161,11 +1165,14 @@
 			baseConfigurationReference = 48D07421A5588319C874D755 /* Pods-JsonSerializerComparison.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = LBQJS63JZK;
 				INFOPLIST_FILE = JsonSerializerComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtn.JsonSerializerComparison;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telventdtn.Chembook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "38aaed56-112c-4e89-8530-b7db47a382bd";
+				PROVISIONING_PROFILE_SPECIFIER = "Chembook Dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1175,11 +1182,14 @@
 			baseConfigurationReference = BE260BB939BF04B1CC2A413A /* Pods-JsonSerializerComparison.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = LBQJS63JZK;
 				INFOPLIST_FILE = JsonSerializerComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtn.JsonSerializerComparison;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telventdtn.Chembook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37b3bfb1-82f6-4cda-9faa-cf0644172cd5";
+				PROVISIONING_PROFILE_SPECIFIER = Chembook;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
