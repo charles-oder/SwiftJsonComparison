@@ -10,6 +10,12 @@ import Foundation
 
 public class TestCase<MF, LCO, LSA> {
     
+    let iterations: Int
+    
+    public init(iterations: Int) {
+        self.iterations = iterations
+    }
+    
     func deserializeLargeComplexObject(jsonString: String) -> LCO? {
         return nil
     }
@@ -41,9 +47,6 @@ public class TestCase<MF, LCO, LSA> {
 }
 
 extension TestCase {
-    var iterations: Int {
-        return 10
-    }
     
     func measureBlock(operation:()->()) -> [Double] {
         var output = [Double]()

@@ -10,38 +10,61 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var textView = UITextView()
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var iterationsTextField: UITextField!
+    @IBOutlet weak var overlay: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    var iterations: Int {
+        return Int(iterationsTextField.text ?? "10") ?? 10
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.frame = view.bounds.insetBy(dx: 10, dy: 50)
-        view.addSubview(textView)
+        overlay.isHidden = true
+        iterationsTextField.text = "1000"
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    @IBAction func runButtonTapped(_ sender: Any) {
+        showOverlay(show: true)
         DispatchQueue(label: "running-tests").async { [weak self] in
             self?.runTests()
+            self?.showOverlay(show: false)
         }
+    }
+    
+    func showOverlay(show: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            if show {
+                self?.activityIndicator.startAnimating()
+            } else {
+                self?.activityIndicator.stopAnimating()
+            }
+            self?.overlay.isHidden = !show
+        }
+    }
+    
+    @IBAction func shareButtonTapped(_ sender: Any) {
     }
 
     func runTests() {
         clearText()
+        appendText("Running \(iterations) iterations of each test...\n\n")
         appendText("Test, Average, High, Low, StandardDev\n")
         appendText("\n")
-        BaseTests().runTests(dataReceived: { testResult in
+        BaseTests(iterations: iterations).runTests(dataReceived: { testResult in
             appendText(testResult)
         })
         appendText("\n")
-        GlossTests().runTests(dataReceived: { testResult in
+        GlossTests(iterations: iterations).runTests(dataReceived: { testResult in
             appendText(testResult)
         })
         appendText("\n")
-        ObjectMapperTests().runTests(dataReceived: { testResult in
+        ObjectMapperTests(iterations: iterations).runTests(dataReceived: { testResult in
             appendText(testResult)
         })
         appendText("\n")
-        SwiftyJSONTests().runTests(dataReceived: { testResult in
+        SwiftyJSONTests(iterations: iterations).runTests(dataReceived: { testResult in
             appendText(testResult)
         })
     }
