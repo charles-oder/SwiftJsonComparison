@@ -10,7 +10,10 @@ import ObjectMapper
 
 class BaseTests: TestCase<BSMBaseModel, BSLCBaseModel, BSLSABaseModel> {
     
-    static let iterations = 10
+    override var testName: String {
+        return "Native"
+    }
+    
     
     override func deserializeLargeComplexObject(jsonString: String) -> BSLCBaseModel? {
         return BSLCBaseModel(json: jsonString)

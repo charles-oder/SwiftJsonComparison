@@ -10,6 +10,10 @@ import ObjectMapper
 
 class ObjectMapperTests: TestCase<OMMediumFile, OMLargeComplexFile, OMLargeSimpleArray> {
         
+    override var testName: String {
+        return "ObjectMapper"
+    }
+    
     override func deserializeLargeComplexObject(jsonString: String) -> OMLargeComplexFile? {
         return Mapper<OMLargeComplexFile>().map(JSONString: jsonString)
     }

@@ -33,6 +33,41 @@ public class TestCase<MF, LCO, LSA> {
     func serializeMediumFile(_ object: MF) -> String? {
         return nil
     }
+    
+    var testName: String {
+        return "TestCase"
+    }
+
+}
+
+extension TestCase {
+    var iterations: Int {
+        return 10
+    }
+    
+    func measureBlock(operation:()->()) -> [Double] {
+        var output = [Double]()
+        for _ in 1...iterations {
+            let startTime = CFAbsoluteTimeGetCurrent()
+            operation()
+            let stopTime = CFAbsoluteTimeGetCurrent()
+            output.append(stopTime - startTime)
+        }
+        return output
+    }
+    
+    func runTests(dataReceived: (String) -> Void) {
+        dataReceived(buildLine(title: "\(testName)-SerializeLargeComplexObject", results: TestResult(values: testSerializeLargeComplexObject())))
+        dataReceived(buildLine(title: "\(testName)-DeserializeLargeComplexObject", results: TestResult(values: testDeserializeLargeComplexObject())))
+        dataReceived(buildLine(title: "\(testName)-SerializeMediumFile", results: TestResult(values: testSerializeMediumFile())))
+        dataReceived(buildLine(title: "\(testName)-DeserializeMediumFile", results: TestResult(values: testDeserializeMediumFile())))
+        dataReceived(buildLine(title: "\(testName)-SerializeLargeSimpleArray", results: TestResult(values: testSerializeLargeSimpleArray())))
+        dataReceived(buildLine(title: "\(testName)-DeserializeLargeSimpleArray", results: TestResult(values: testDeserializeLargeSimpleArray())))
+    }
+    
+    func buildLine(title: String, results: TestResult) -> String {
+        return "\(title), \(results.meanString), \(results.maxString), \(results.minString), \(results.standardDeviationString)\n"
+    }
 
     func testSerializeLargeComplexObject() -> [Double] {
         let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
@@ -137,40 +172,6 @@ public class TestCase<MF, LCO, LSA> {
         }
     }
     
-
-}
-
-extension TestCase {
-    var iterations: Int {
-        return 2
-    }
-    
-    func measureBlock(operation:()->()) -> [Double] {
-        var output = [Double]()
-        for _ in 1...iterations {
-            let startTime = CFAbsoluteTimeGetCurrent()
-            operation()
-            let stopTime = CFAbsoluteTimeGetCurrent()
-            output.append(stopTime - startTime)
-        }
-        return output
-    }
-    
-    func runTests() -> String {
-        var output = "Test, Average, High, Low, StandardDev\n"
-        output += buildLine(title: "SerializeLargeComplexObject", results: TestResult(values: testSerializeLargeComplexObject()))
-        output += buildLine(title: "DeserializeLargeComplexObject", results: TestResult(values: testDeserializeLargeComplexObject()))
-        output += buildLine(title: "SerializeMediumFile", results: TestResult(values: testSerializeMediumFile()))
-        output += buildLine(title: "DeserializeMediumFile", results: TestResult(values: testDeserializeMediumFile()))
-        output += buildLine(title: "SerializeLargeSimpleArray", results: TestResult(values: testSerializeLargeSimpleArray()))
-        output += buildLine(title: "DeserializeLargeSimpleArray", results: TestResult(values: testDeserializeLargeSimpleArray()))
-        return output
-    }
-    
-    func buildLine(title: String, results: TestResult) -> String {
-        return "\(title), \(results.meanString), \(results.maxString), \(results.minString), \(results.standardDeviationString)\n"
-    }
-
 }
 
 extension TestCase {

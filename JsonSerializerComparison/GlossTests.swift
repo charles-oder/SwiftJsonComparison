@@ -10,6 +10,10 @@ import Gloss
 
 class GlossTests: TestCase<GLMediumFile, GLLargeComplexFile, GLLargeSimpleArray> {
     
+    override var testName: String {
+        return "Gloss"
+    }
+    
     override func deserializeLargeComplexObject(jsonString: String) -> GLLargeComplexFile? {
         guard let data = jsonString.data(using: .utf8, allowLossyConversion: true) else {
             return nil
