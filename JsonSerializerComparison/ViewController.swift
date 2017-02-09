@@ -21,7 +21,14 @@ class ViewController: UIViewController {
 
     func runTests() -> String {
         var output = ""
+        output += "Native JSON Serialization\n"
         output += BaseTests().runTests()
+        output += "\n\n\nGloss\n"
+        output += GlossTests().runTests()
+        output += "\n\n\nObjectMapper\n"
+        output += ObjectMapperTests().runTests()
+        output += "\n\n\nSwiftyJSON w/ SwiftyJSONAccellorator\n"
+        output += SwiftyJSONTests().runTests()
         return output
     }
 }

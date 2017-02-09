@@ -8,19 +8,135 @@
 
 import Foundation
 
-public protocol TestCase {
+public class TestCase<MF, LCO, LSA> {
     
-    func testSerializeLargeComplexObject() -> [Double]
+    func deserializeLargeComplexObject(jsonString: String) -> LCO? {
+        return nil
+    }
     
-    func testDeserializeLargeComplexObject() -> [Double]
+    func serializeLargeComplexObject(_ object: LCO) -> String? {
+        return nil
+    }
     
-    func testSerializeLargeSimpleArray() -> [Double]
+    func deserializeLargeSimpleArray(jsonString: String) -> LSA? {
+        return nil
+    }
     
-    func testDeserializeLargeSimpleArray() -> [Double]
+    func serializeLargeSimpleArray(_ object: LSA) -> String? {
+        return nil
+    }
     
-    func testSerializeMediumFile() -> [Double]
+    func deserializeMediumFile(jsonString: String) -> MF? {
+        return nil
+    }
     
-    func testDeserializeMediumFile() -> [Double]
+    func serializeMediumFile(_ object: MF) -> String? {
+        return nil
+    }
+
+    func testSerializeLargeComplexObject() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
+        
+        let testObject = self.deserializeLargeComplexObject(jsonString: jsonString)
+        
+        if let error = assertLargeComplexObject(json: serializeLargeComplexObject(testObject!)) {
+            print(error)
+            return []
+        }
+        
+        return measureBlock { [weak self] in
+            
+            _ = self?.serializeLargeComplexObject(testObject!)
+        }
+        
+        
+    }
+    
+    func testDeserializeLargeComplexObject() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeComplexFIle")
+        
+        let testObject = deserializeLargeComplexObject(jsonString: jsonString)
+        
+        if let error = assertLargeComplexObject(json: serializeLargeComplexObject(testObject!)) {
+            print(error)
+            return []
+        }
+        
+        return measureBlock { [weak self] in
+            _ = self?.deserializeLargeComplexObject(jsonString: jsonString)
+        }
+        
+        
+    }
+    
+    func testSerializeLargeSimpleArray() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
+        
+        let testObject = self.deserializeLargeSimpleArray(jsonString: jsonString)
+        
+        let jsonOutput = serializeLargeSimpleArray(testObject!)
+        
+        if let error = assertLargeSimpleArray(json: jsonOutput!) {
+            print(error)
+            return []
+        }
+        
+        return measureBlock { [weak self] in
+            _ = self?.serializeLargeSimpleArray(testObject!)
+        }
+        
+    }
+    
+    func testDeserializeLargeSimpleArray() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "LargeSimpleArray")
+        
+        let testObject = deserializeLargeSimpleArray(jsonString: jsonString)
+        
+        if let error = assertLargeSimpleArray(json: serializeLargeSimpleArray(testObject!)) {
+            print(error)
+            return []
+        }
+        
+        return measureBlock { [weak self] in
+            _ = self?.deserializeLargeSimpleArray(jsonString: jsonString)
+        }
+        
+    }
+    
+    func testSerializeMediumFile() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
+        
+        let testObject = self.deserializeMediumFile(jsonString: jsonString)
+        let jsonOutput = serializeMediumFile(testObject!)
+        
+        if let error = assertMediumFile(json: jsonOutput) {
+            print(error)
+            return []
+        }
+        
+        return measureBlock { [weak self] in
+            _ = self?.serializeMediumFile(testObject!)
+        }
+        
+        
+    }
+    
+    func testDeserializeMediumFile() -> [Double] {
+        let jsonString = JsonLoader().loadTestJSON(jsonFileName: "MediumFile")
+        
+        let testObject = deserializeMediumFile(jsonString: jsonString)!
+        
+        if let error = assertMediumFile(json: serializeMediumFile(testObject)) {
+            print(error)
+            return []
+        }
+        
+        
+        return measureBlock { [weak self] in
+            _ = self?.deserializeMediumFile(jsonString: jsonString)
+        }
+    }
+    
 
 }
 
